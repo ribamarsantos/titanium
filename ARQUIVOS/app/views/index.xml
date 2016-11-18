@@ -1,0 +1,10 @@
+<Alloy>
+	<Window>
+		<Label id="label" onClick="doClick">Hello, World</Label>
+
+		<TextArea id="textArea"
+		 borderWidth="2" borderColor="#bbb" borderRadius="5"
+		 color="#888" textAlign="left"
+		 top="60" width="300" height="70" />
+	</Window>
+</Alloy>

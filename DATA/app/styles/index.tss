@@ -1,0 +1,9 @@
+".top10": {
+	 top: 10
+}
+"Window":{
+	layout:'vertical'
+}
+"TextField":{
+	width: Ti.UI.FILL
+}

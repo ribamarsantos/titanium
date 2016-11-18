@@ -1,0 +1,5 @@
+<Alloy>
+	<Window>
+		<TableView id="myTableView"></TableView>
+	</Window>
+</Alloy>

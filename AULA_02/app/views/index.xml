@@ -1,0 +1,8 @@
+<Alloy>
+	<Window class="container">
+		<TableView id="times" onClick="exibirDivisao">
+
+		</TableView>
+	</Window>
+
+</Alloy>

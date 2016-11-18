@@ -1,0 +1,6 @@
+<Alloy>
+	<Window>
+		<Label id='bustedLabel' ></Label>
+		<Button id='deleteButton' onClick="capture" ></Button>
+	</Window>
+</Alloy>

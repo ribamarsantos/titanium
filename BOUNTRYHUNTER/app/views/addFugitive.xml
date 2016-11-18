@@ -1,0 +1,6 @@
+<Alloy>
+	<Window>
+		<TextField id="fugitiveTextField" ></TextField>
+		<Button id="addButton" onClick="add"></Button>
+	</Window>
+</Alloy>

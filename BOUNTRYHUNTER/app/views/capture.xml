@@ -1,0 +1,12 @@
+<Alloy>
+		<Tab id='captureTab'>
+			<Window >
+				<TableView onClick="showDetails">
+					<TableViewRow title='Malvado'></TableViewRow>
+					<TableViewRow title='Malvadinho'></TableViewRow>
+					<TableViewRow title='Super Man'></TableViewRow>
+					<TableViewRow title='Batman'></TableViewRow>
+				</TableView>
+			</Window>
+		</Tab>
+</Alloy>

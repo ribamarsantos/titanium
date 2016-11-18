@@ -1,0 +1,7 @@
+<Alloy>
+	<Window>
+		<Label id='fugitiveLabel' ></Label>
+		<Button id='captureButton' onClick="capture"></Button>
+		<Button id='deleteButton' onClick="remove" ></Button>
+	</Window>
+</Alloy>

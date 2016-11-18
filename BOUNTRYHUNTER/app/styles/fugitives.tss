@@ -1,0 +1,10 @@
+"#Window":{
+	title: L('new_fugitive')
+}
+"#fugitiveTab":{
+	title: L('fugitives')
+}
+
+"#addFugitiveButton[platafomr=iphone]":{
+	systemButton: Ti.UI.iPhone.SystemButton.ADD
+}

@@ -1,0 +1,15 @@
+
+"#fugitiveLabel":{
+	text: L('still_at_large'),
+	top:40
+}
+
+"#captureButton" :{
+	title: L('capture'),
+	top:20
+}
+
+"#deleteButton":{
+	title:L('delete'),
+	top:20
+}

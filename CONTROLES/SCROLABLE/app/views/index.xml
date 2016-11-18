@@ -1,0 +1,9 @@
+<Alloy>
+	<Window backgroundColor="black" title="picker">
+		<ScrollableView>
+				<ImageView opacity="0.6" image="http://www.motorpress.com.br/static/images/uploads/ecosport_titanium_08_940x532.jpg" />
+				<ImageView image="http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/07/28/102870926-150723_Ferrari488Spider_3-4AntAlto.1910x1000.jpg" />
+				<ImageView image="http://cars.mclaren.com/files/live/sites/mclaren/files/cars-mclaren-com-Main/McLaren%20Model%20Section/P1%20New%20Images/P1%20GTR/McLaren%20P1%20GTR%20front%203_4_%20edit%20for%203%20para.jpg?t=w370" />
+		</ScrollableView>
+	</Window>
+</Alloy>

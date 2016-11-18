@@ -1,0 +1,10 @@
+
+"#bustedLabel":{
+	text: L('busted'),
+	top:40
+}
+
+"#deleteButton":{
+	title:L('delete'),
+	top:20
+}

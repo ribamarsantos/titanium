@@ -1,0 +1,11 @@
+<Alloy>
+	<Window>
+		<Label class="top10">Email</Label>
+		<TextField id="txtEmail" class="top10"/>
+
+		<Label class="top10">Senha</Label>
+		<TextField id="txtSenha" class="top10" passwordMask="true" />
+    <Button id="btnSalvar" class="top10" onClick="salvar">Salvar</Button>
+		<Button id="btnCarregar" class="top10" onClick="carregar">Carregar</Button>
+	</Window>
+</Alloy>

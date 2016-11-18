@@ -1,0 +1,11 @@
+<Alloy>
+	<Window class="container">
+		<Picker selectionIndicator="true" width="Ti.UI.FILL" useSpinner="true">
+			<PickerRow title="Banana"/>
+			<PickerRow title="Maça"/>
+			<PickerRow title="Melancia"/>
+			<PickerRow title="Laranja"/>
+			<PickerRow title="Abacaxi"/>
+		</Picker>
+	</Window>
+</Alloy>

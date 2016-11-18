@@ -1,0 +1,16 @@
+"#fugitiveTextField":{
+  top: 40,
+  height: 40,
+  left: 10,
+  right: 10,
+  hintText: L('fugitive_name'),
+  borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED
+}
+
+"#addButton":{
+  top: 20,
+  title: L('add'),
+  height: 40,
+  left: 10,
+  right: 10
+}

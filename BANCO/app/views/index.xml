@@ -1,0 +1,27 @@
+<Alloy>
+	<Window layout="vertical">
+
+
+
+			<Label text="Nome:" left="10" textAlign="Ti.UI.TEXT_ALIGNMENT_LEFT" width="Ti.UI.FILL" />
+
+			<TextField keyboardType="Ti.UI.KEYBOARD_EMAIL"
+								 id="txtNome"
+								 borderStyle="Ti.UI.INPUT_BORDERSTYLE_ROUNDED"
+								 color="#336699" top="10" left="10" width="Ti.UI.FILL" height="60" />
+
+			<Label text="Email:" left="10" textAlign="Ti.UI.TEXT_ALIGNMENT_LEFT" width="Ti.UI.FILL" />
+
+			<TextField keyboardType="Ti.UI.KEYBOARD_EMAIL"
+								 id="txtEmail"
+								 borderStyle="Ti.UI.INPUT_BORDERSTYLE_ROUNDED"
+								 color="#336699" top="10" left="10" width="Ti.UI.FILL" height="60" />
+
+			<Button id="btnCadastrar" onClick="adicionar" title="Cadastrar"
+						             top="10" width="120" height="50" />
+
+		<TableView id="tbviewUsers" top="30" onLongpress="excluir">
+
+		</TableView>
+	</Window>
+</Alloy>
