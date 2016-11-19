@@ -13,3 +13,25 @@
 	title:L('delete'),
 	top:20
 }
+
+"#fugitiveImageView":{
+	width: 150,
+	height: 150,
+	top: 20
+}
+
+"#photoButton":{
+	title: L('add_photo')
+}
+"#galleryButton":{
+	title: L('gallery')
+}
+
+"#cameraButton":{
+	title: L('camera')
+}
+
+"#viewOption":{
+	backgroundColor: "gray",
+	borderRadius: 9
+}

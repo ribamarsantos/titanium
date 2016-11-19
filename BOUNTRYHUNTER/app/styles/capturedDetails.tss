@@ -8,3 +8,9 @@
 	title:L('delete'),
 	top:20
 }
+
+"#capturedImageView":{
+	width: 150,
+	height: 150,
+	top: 20
+}

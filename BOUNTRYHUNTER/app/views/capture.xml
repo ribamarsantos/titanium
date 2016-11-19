@@ -1,11 +1,8 @@
 <Alloy>
 		<Tab id='captureTab'>
 			<Window >
-				<TableView onClick="showDetails">
-					<TableViewRow title='Malvado'></TableViewRow>
-					<TableViewRow title='Malvadinho'></TableViewRow>
-					<TableViewRow title='Super Man'></TableViewRow>
-					<TableViewRow title='Batman'></TableViewRow>
+				<TableView onClick="showDetails" dataCollection="fugitives" dataFilter="capturedFilter">
+				<TableViewRow title="{name}" identificador="{alloy_id}"></TableViewRow>
 				</TableView>
 			</Window>
 		</Tab>
