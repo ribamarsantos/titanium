@@ -9,6 +9,10 @@
 	top:20
 }
 
+"#mapButton":{
+	title:L('map_button'),
+	top:20
+}
 "#capturedImageView":{
 	width: 150,
 	height: 150,

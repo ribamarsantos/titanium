@@ -2,6 +2,7 @@
 	<Window>
 		<ImageView id="capturedImageView"></ImageView>
 		<Label id='bustedLabel' ></Label>
+		<Button id='mapButton' onClick="showAtMap" ></Button>
 		<Button id='deleteButton' onClick="capture" ></Button>
 	</Window>
 </Alloy>

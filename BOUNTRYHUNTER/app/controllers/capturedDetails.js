@@ -14,3 +14,13 @@ function capture(e){
   captured.save();
   $.capturedDetails.close();
 }
+
+function showAtMap(e) {
+	var ctrl = Alloy.createController('map', captured);
+  if ( OS_ANDROID){
+    ctrl.getView().open();
+  }else{
+    $.capturedDetails.tab.open(ctrl.getView());  
+  }
+
+}

@@ -9,6 +9,7 @@ var args = $.args;
 function showDetails(e){
 	var fugitive = Alloy.Collections.fugitives.get(e.rowData.identificador);
 	var ctrl = Alloy.createController('capturedDetails', fugitive);
+	ctrl.tab = $.capturedTab;
 	$.captureTab.open(ctrl.getView());
 }
 function capturedFilter(collection){

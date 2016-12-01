@@ -1,4 +1,4 @@
-if(OS_ANDROID && Ti.Platform.version > '5'){
+if(OS_ANDROID && Ti.Platform.version >= '5'){
   if (!Ti.Media.hasCameraPermissions){
     Ti.Media.requestCameraPermissions(function (e) {
       if ( e.success){
@@ -11,8 +11,7 @@ if(OS_ANDROID && Ti.Platform.version > '5'){
 }else{
   init();
 }
-//init();
-//alert(Ti.Platform.version);
+
 function showAddFugitive(argument) {
   var ctrl = Alloy.createController('addFugitive');
 
