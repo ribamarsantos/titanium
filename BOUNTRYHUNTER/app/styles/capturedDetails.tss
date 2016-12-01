@@ -8,6 +8,7 @@
 	title:L('delete'),
 	top:20
 }
+<<<<<<< HEAD
 
 "#mapButton":{
 	title:L('map_button'),
@@ -18,3 +19,5 @@
 	height: 150,
 	top: 20
 }
+=======
+>>>>>>> parent of a1dd7cb... aula data binding, camera

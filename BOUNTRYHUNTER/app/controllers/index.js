@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 if(OS_ANDROID && Ti.Platform.version >= '5'){
   if (!Ti.Media.hasCameraPermissions){
     Ti.Media.requestCameraPermissions(function (e) {
@@ -11,6 +12,9 @@ if(OS_ANDROID && Ti.Platform.version >= '5'){
 }else{
   init();
 }
+=======
+
+>>>>>>> parent of a1dd7cb... aula data binding, camera
 
 function showAddFugitive(argument) {
   var ctrl = Alloy.createController('addFugitive');
@@ -30,9 +34,8 @@ function showAddFugitive(argument) {
 
 Ti.App.addEventListener('showFugitiveEvent', showAddFugitive);
 
-function init() {
-  Alloy.Collections.fugitives.fetch();
+Alloy.Collections.fugitives.fetch();
 
-  $.index.open();
 
-}
+
+$.index.open();

@@ -1,0 +1,8 @@
+"/home/ribamar/version-control/Titanium Projects/MEDIA/build/android/gen/android/support/v7/appcompat/R.java"
+"/home/ribamar/version-control/Titanium Projects/MEDIA/build/android/gen/com/test/ApplicationStylesheet.java"
+"/home/ribamar/version-control/Titanium Projects/MEDIA/build/android/gen/com/test/AssetCryptImpl.java"
+"/home/ribamar/version-control/Titanium Projects/MEDIA/build/android/gen/com/test/MediaActivity.java"
+"/home/ribamar/version-control/Titanium Projects/MEDIA/build/android/gen/com/test/MediaAppInfo.java"
+"/home/ribamar/version-control/Titanium Projects/MEDIA/build/android/gen/com/test/MediaApplication.java"
+"/home/ribamar/version-control/Titanium Projects/MEDIA/build/android/gen/com/test/R.java"
+"/home/ribamar/version-control/Titanium Projects/MEDIA/build/android/gen/ti/modules/titanium/ui/R.java"

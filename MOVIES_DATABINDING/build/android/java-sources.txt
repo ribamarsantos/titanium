@@ -1,0 +1,8 @@
+"/home/ribamar/version-control/Titanium Projects/MOVIES_DATABINDING/build/android/gen/android/support/v7/appcompat/R.java"
+"/home/ribamar/version-control/Titanium Projects/MOVIES_DATABINDING/build/android/gen/com/test/ApplicationStylesheet.java"
+"/home/ribamar/version-control/Titanium Projects/MOVIES_DATABINDING/build/android/gen/com/test/AssetCryptImpl.java"
+"/home/ribamar/version-control/Titanium Projects/MOVIES_DATABINDING/build/android/gen/com/test/Movies_databindingActivity.java"
+"/home/ribamar/version-control/Titanium Projects/MOVIES_DATABINDING/build/android/gen/com/test/Movies_databindingAppInfo.java"
+"/home/ribamar/version-control/Titanium Projects/MOVIES_DATABINDING/build/android/gen/com/test/Movies_databindingApplication.java"
+"/home/ribamar/version-control/Titanium Projects/MOVIES_DATABINDING/build/android/gen/com/test/R.java"
+"/home/ribamar/version-control/Titanium Projects/MOVIES_DATABINDING/build/android/gen/ti/modules/titanium/ui/R.java"

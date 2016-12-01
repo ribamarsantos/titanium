@@ -1,16 +1,7 @@
 <Alloy>
 	<Window>
-		<ImageView id="fugitiveImageView"></ImageView>
 		<Label id='fugitiveLabel' ></Label>
-		<Button id='photoButton' onClick="showOption"/>
 		<Button id='captureButton' onClick="capture"></Button>
 		<Button id='deleteButton' onClick="remove" ></Button>
-
-		<View id="viewOption" layout="horizontal" visible="false"  bottom="5">
-			<Button id="galleryButton" onClick="takePhotoFromGallery"></Button>
-			<Button id="cameraButton" onClick="takePhotoFromCamera" ></Button>
-		</View>
 	</Window>
-
-
 </Alloy>
