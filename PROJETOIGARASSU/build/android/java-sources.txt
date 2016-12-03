@@ -1,0 +1,8 @@
+"/home/ribamar/version-control/Titanium Projects/PROJETO_IGARASSU/build/android/gen/android/support/v7/appcompat/R.java"
+"/home/ribamar/version-control/Titanium Projects/PROJETO_IGARASSU/build/android/gen/br/com/ribasoft/ApplicationStylesheet.java"
+"/home/ribamar/version-control/Titanium Projects/PROJETO_IGARASSU/build/android/gen/br/com/ribasoft/AssetCryptImpl.java"
+"/home/ribamar/version-control/Titanium Projects/PROJETO_IGARASSU/build/android/gen/br/com/ribasoft/Projeto_igarassuActivity.java"
+"/home/ribamar/version-control/Titanium Projects/PROJETO_IGARASSU/build/android/gen/br/com/ribasoft/Projeto_igarassuAppInfo.java"
+"/home/ribamar/version-control/Titanium Projects/PROJETO_IGARASSU/build/android/gen/br/com/ribasoft/Projeto_igarassuApplication.java"
+"/home/ribamar/version-control/Titanium Projects/PROJETO_IGARASSU/build/android/gen/br/com/ribasoft/R.java"
+"/home/ribamar/version-control/Titanium Projects/PROJETO_IGARASSU/build/android/gen/ti/modules/titanium/ui/R.java"

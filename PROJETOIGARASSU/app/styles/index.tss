@@ -1,0 +1,73 @@
+"#header": {
+	layout: "horizontal",
+	height: Ti.UI.SIZE,
+	backgroundColor: "#004C00"
+}
+
+".imgviewmenu": {
+	width: 96,
+	height: 96,
+	//image: "http://www.motorpress.com.br/static/images/uploads/ecosport_titanium_08_940x532.jpg",
+	image: "https://igarassu-project.herokuapp.com/imagens/bope_paintball.jpg",
+	top: 10,
+	left: 10,
+	right: 10,
+	bottom: 10,
+
+	borderRadius: 100
+}
+".imgviewtemperature": {
+	width: 36,
+	height: 36,
+	left: 10,
+	image: "http://openweathermap.org/img/w/10d.png"
+}
+"#lblCityName": {
+	text: L('city_name'),
+	font: { fontSize:36 }
+}
+
+"#lblTemperature": {
+	textAlign: Ti.UI.TEXT_ALIGNMENT_RIGHT,
+	text: "31º",
+	font: { fontSize:14 }
+}
+
+"#viewMenu": {
+	height: Ti.UI.FILL,
+	layout: "vertical"
+}
+"#viewColumn01":{
+	layout: "horizontal",
+	height: Ti.UI.SIZE
+}
+"#viewColumn02":{
+	layout: "horizontal",
+	height: Ti.UI.SIZE
+}
+
+".lblMenuItem": {
+	font: {
+		fontSize: 16,
+		fontFamily: "Helvetica"	,
+		fontWeight: "bold"
+	}
+}
+
+
+
+"#lblWhatToDo": {
+	text: L('lbl_whattodo')
+}
+
+"#lblFavorite": {
+		text: L('lbl_favorite')
+}
+
+"#lblInformation": {
+		text: L('lbl_information')
+}
+
+"#lblEvent": {
+		text: L('lbl_event')
+}

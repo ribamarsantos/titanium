@@ -1,0 +1,36 @@
+<Alloy>
+	<Window layout="vertical">
+
+		<View id="header">
+			<Label id="lblCityName"></Label>
+			<ImageView id="imgviewTemperature" class="imgviewtemperature"/>
+			<Label id="lblTemperature"></Label>
+		</View>
+
+		<ScrollView id="viewMenu" backgroundColor="green" >
+			<View id="viewColumn01"  backgroundColor="teal">
+				<View  layout="vertical" height="Ti.UI.SIZE" width="Ti.UI.SIZE">
+					<ImageView  class="imgviewmenu" onClick="showListPlace" />
+					<Label id="lblWhatToDo" class="lblMenuItem" onClick="showListPlace"/>
+				</View>
+
+				<View layout="vertical" height="Ti.UI.SIZE" width="Ti.UI.SIZE">
+					<ImageView  class="imgviewmenu" />
+					<Label id="lblFavorite" class="lblMenuItem"/>
+				</View>
+			</View>
+
+			<View id="viewColumn02" backgroundColor="blue">
+				<View layout="vertical" height="Ti.UI.SIZE" width="Ti.UI.SIZE">
+					<ImageView  class="imgviewmenu" />
+					<Label id="lblInformation" class="lblMenuItem"/>
+				</View>
+				<View layout="vertical" height="Ti.UI.SIZE" width="Ti.UI.SIZE">
+					<ImageView  class="imgviewmenu" />
+					<Label id="lblEvent" class="lblMenuItem"/>
+				</View>
+			</View>
+
+		</ScrollView>
+	</Window>
+</Alloy>

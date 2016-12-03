@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<string name="city_name"> Igarassu</string>
+	<string name="lbl_whattodo">What to Do</string>
+	<string name="lbl_favorite">Favorites</string>
+	<string name="lbl_information">Informations</string>
+	<string name="lbl_event">Events</string>
+	<string name="museus">Museums</string>
+	<string name="diversao">Have fun</string>
+	<string name="feiras">Fairs</string>
+	<string name="hoteis">Hotels</string>
+	<string name="igrejas">Churchs</string>
+	<string name="monumentos_historicos">Historical Monuments</string>
+	<string name="pracas">Squares</string>
+	<string name="praias">Beaches</string>
+	<string name="restaurantes">Restaurants</string>
+</resources>
