@@ -1,0 +1,8 @@
+<Alloy>
+	<Window>
+		<Label id="bustedLabel"></Label>
+		<ImageView id="capturedImageView"></ImageView>
+		<Button id="mapButton" onClick="showMap"></Button>
+		<Button id="deleteButton"></Button>
+	</Window>
+</Alloy>

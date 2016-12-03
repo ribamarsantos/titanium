@@ -1,0 +1,7 @@
+"#fugitiveTab":{
+	title:L('fugitives')
+}
+
+"#addFugitiveButton[platform=ios]":{
+	systemButton:Titanium.UI.iOS.SystemButton.ADD
+}

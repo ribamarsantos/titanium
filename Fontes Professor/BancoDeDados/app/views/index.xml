@@ -1,0 +1,12 @@
+<Alloy>
+	<Window class="container">
+		<Label>Nome</Label>
+		<TextField id="txtNome"></TextField>
+		<Label>Email</Label>
+		<TextField id="txtEmail"></TextField>
+		<Button id="cadastrarButton" onClick="cadastrar">Cadastrar</Button>
+		<TableView id="myTableView">
+			
+		</TableView>
+	</Window>
+</Alloy>

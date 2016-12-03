@@ -1,0 +1,10 @@
+<Alloy>
+	<Tab id="capturedTab">
+		<Window>
+			<TableView onClick="showDetails" dataCollection="fugitives"
+				dataFilter="capturedFilter">
+				<TableViewRow title="{name}" identificador="{alloy_id}"></TableViewRow>
+			</TableView>
+		</Window>
+	</Tab>
+</Alloy>

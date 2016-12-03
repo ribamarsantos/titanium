@@ -1,0 +1,23 @@
+"Window":{
+	layout:'vertical'
+}
+"Label":{
+	left:10,
+	top:20,
+}
+"TextField":{
+	left:10,
+	right:10,
+	height:40,
+	backgroundColor: "#ccc"
+}
+"#cadastrarButton" :{
+	top:10,
+	left:10,
+	right:10,
+	height:40,
+	backgroundColor: "#3cf",
+	color:'white'
+}
+
+

@@ -1,0 +1,6 @@
+<Alloy>
+	<Window>
+		<TableView onClick="exibirDivisao" id="myTable">
+		</TableView>
+	</Window>
+</Alloy>

@@ -1,0 +1,6 @@
+<Alloy>
+	<Window layout="vertical">
+		<Button top="20" onClick="play">Play</Button>
+		<ProgressBar top="10" id="progress"></ProgressBar>
+	</Window>
+</Alloy>

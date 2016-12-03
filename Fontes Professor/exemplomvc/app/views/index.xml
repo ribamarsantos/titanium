@@ -1,0 +1,13 @@
+<Alloy>
+	<Window class="container">
+		<Label id="label" onClick="doClick">Hello, World</Label>
+		<Label color="red">Teste</Label>
+		<View width="Ti.UI.FILL" height="Ti.UI.FILL"
+			backgroundColor="blue" layout="horizontal">
+			<View backgroundColor="yellow" width="50%" height="Ti.UI.FILL">
+				<Label>Titanium!</Label>
+			</View>	
+			<View backgroundColor="red" width="Ti.UI.FILL" height="40" top="0"></View>	
+		</View>
+	</Window>
+</Alloy>

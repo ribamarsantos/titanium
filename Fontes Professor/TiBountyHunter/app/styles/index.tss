@@ -1,0 +1,4 @@
+"#addFugiteMenuItem[platform=android]":{
+	title:L('add'),
+	showAsAction : Titanium.Android.SHOW_AS_ACTION_IF_ROOM
+}

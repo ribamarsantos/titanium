@@ -1,0 +1,9 @@
+<Alloy>
+	<TabGroup>
+		<Menu platform="android">
+			<MenuItem id="addFugiteMenuItem" onClick="showAddFugitive"></MenuItem>
+		</Menu>
+		<Require src="fugitives"></Require>
+		<Require src="captured"></Require>
+	</TabGroup>
+</Alloy>

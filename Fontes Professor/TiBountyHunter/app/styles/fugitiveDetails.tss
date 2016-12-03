@@ -1,0 +1,20 @@
+"#fugitiveLabel" : {
+	text: L('still_at_large'),
+	top: 40
+}
+"#captureButton":  {
+	title: L('capture'),
+	top:20
+}
+"#deleteButton": {
+	title: L('delete'),
+	top:20
+}
+"#fugitiveImageView":{
+	width:150,
+	height:120,
+	top:20	
+}
+"#photoButton":{
+	title:L('add_photo')
+}

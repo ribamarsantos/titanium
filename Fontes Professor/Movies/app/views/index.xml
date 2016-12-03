@@ -1,0 +1,15 @@
+<Alloy>
+	<Window>
+		<TableView id="myTableView" dataCollection="filmes">
+			<TableViewRow>
+				<View id="view">
+					<ImageView id="image" />
+					<View id="viewDados">
+						<Label id="tituloLabel" />
+						<Label id="anoLabel" />
+					</View>
+				</View>
+			</TableViewRow>			
+		</TableView>
+	</Window>
+</Alloy>

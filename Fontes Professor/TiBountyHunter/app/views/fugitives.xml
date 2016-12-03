@@ -1,0 +1,13 @@
+<Alloy>
+	<Tab id="fugitiveTab">
+		<Window>
+			<RightNavButton platform="ios">
+				<Button id="addFugitiveButton" onClick="showAddFugitive"/>
+			</RightNavButton>
+			<TableView onClick="showDetails" dataCollection="fugitives"
+				dataFilter="fugitivesFilter">
+				<TableViewRow title="{name}" identificador="{alloy_id}" ></TableViewRow>
+			</TableView>
+		</Window>
+	</Tab>
+</Alloy>
