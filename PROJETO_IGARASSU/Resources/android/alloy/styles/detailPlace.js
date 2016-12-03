@@ -1,1 +1,1 @@
-module.exports = [];
+module.exports = [{"isClass":true,"priority":10000.0005,"key":"btnMap","style":{image:"/favorite.png",width:Ti.UI.SIZE,height:Ti.UI.SIZE,}},{"isId":true,"priority":100000.0001,"key":"imgphotoPlace","style":{width:Ti.UI.FILL,height:250,borderWidth:5,}},{"isId":true,"priority":100000.0002,"key":"winDetail","style":{layout:"vertical",}},{"isId":true,"priority":100000.0003,"key":"tableViewDetailPlace","style":{}},{"isId":true,"priority":100000.0004,"key":"viewDetailPlaceTableViews","style":{layout:"vertical",}}];
