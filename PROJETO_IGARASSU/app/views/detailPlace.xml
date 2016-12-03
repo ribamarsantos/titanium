@@ -1,0 +1,8 @@
+<Alloy>
+	<Window>
+		<Label id="lblPlace" />
+			<TableView id="tableViewDetailPlace" dataCollection="places" onClick="showDescriptionPlace" dataFilter="filterPlace">
+				<TableViewRow title={name} id={id}></TableViewRow>
+			</TableView>
+	</Window>
+</Alloy>

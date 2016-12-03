@@ -1,0 +1,5 @@
+<Alloy>
+	<Window>
+		<TableView id="tableViewListPlaces" onClick="showDetails" />
+	</Window>
+</Alloy>
