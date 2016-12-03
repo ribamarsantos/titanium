@@ -8,19 +8,33 @@ function __processArg(obj, key) {
 }
 
 function Controller() {
-    function __alloyId3(e) {
+    function __alloyId9(e) {
         if (e && e.fromAdapter) return;
-        __alloyId3.opts || {};
-        var models = filterPlace(__alloyId2);
+        __alloyId9.opts || {};
+        var models = filterPlace(__alloyId8);
         var len = models.length;
         var rows = [];
         for (var i = 0; len > i; i++) {
             var __alloyId0 = models[i];
             __alloyId0.__transform = _.isFunction(__alloyId0.transform) ? __alloyId0.transform() : __alloyId0.toJSON();
-            var __alloyId1 = Ti.UI.createTableViewRow({
-                title: __alloyId0.__transform.name
+            var __alloyId2 = Ti.UI.createTableViewRow({});
+            rows.push(__alloyId2);
+            var __alloyId3 = Ti.UI.createView({});
+            __alloyId2.add(__alloyId3);
+            var __alloyId4 = Ti.UI.createImageView({
+                image: __alloyId0.__transform.photo
             });
-            rows.push(__alloyId1);
+            __alloyId3.add(__alloyId4);
+            var __alloyId5 = Ti.UI.createView({});
+            __alloyId3.add(__alloyId5);
+            var __alloyId6 = Ti.UI.createLabel({
+                text: __alloyId0.__transform.place_name
+            });
+            __alloyId5.add(__alloyId6);
+            var __alloyId7 = Ti.UI.createLabel({
+                text: __alloyId0.__transform.phone
+            });
+            __alloyId5.add(__alloyId7);
         }
         $.__views.tableViewDetailPlace.setData(rows);
     }
@@ -59,14 +73,24 @@ function Controller() {
         id: "tableViewDetailPlace"
     });
     $.__views.detailPlace.add($.__views.tableViewDetailPlace);
-    var __alloyId2 = Alloy.Collections["places"] || places;
-    __alloyId2.on("fetch destroy change add remove reset", __alloyId3);
+    var __alloyId8 = Alloy.Collections["places"] || places;
+    __alloyId8.on("fetch destroy change add remove reset", __alloyId9);
     showDescriptionPlace ? $.addListener($.__views.tableViewDetailPlace, "click", showDescriptionPlace) : __defers["$.__views.tableViewDetailPlace!click!showDescriptionPlace"] = true;
     exports.destroy = function() {
-        __alloyId2 && __alloyId2.off("fetch destroy change add remove reset", __alloyId3);
+        __alloyId8 && __alloyId8.off("fetch destroy change add remove reset", __alloyId9);
     };
     _.extend($, $.__views);
     var row = $.args;
+    var xhr = Ti.Network.createHTTPClient();
+    xhr.onerror = function(e) {
+        alert(e);
+    };
+    xhr.onload = function() {
+        Ti.API.info(this.responseText);
+        Alloy.Collections.places.reset(JSON.parse(this.responseText));
+    };
+    xhr.open("GET", "http://igarassu-project.herokuapp.com/place");
+    xhr.send();
     $.lblPlace.text = row.title;
     __defers["$.__views.tableViewDetailPlace!click!showDescriptionPlace"] && $.addListener($.__views.tableViewDetailPlace, "click", showDescriptionPlace);
     _.extend($, exports);

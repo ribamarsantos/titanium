@@ -2,7 +2,15 @@
 	<Window>
 		<Label id="lblPlace" />
 			<TableView id="tableViewDetailPlace" dataCollection="places" onClick="showDescriptionPlace" dataFilter="filterPlace">
-				<TableViewRow title={name} id={id}></TableViewRow>
+				<TableViewRow>
+						<View id="viewDetailPlaceTableViews">
+								<ImageView id="imgphotoPlace" image="{photo}" />
+								<View id="viewTitle">
+									<Label id="lblPlaceName" text="{place_name}" />
+									<Label id="lblPlaceName" text="{phone}" />
+								</View>
+						</View>
+				</TableViewRow>
 			</TableView>
 	</Window>
 </Alloy>
