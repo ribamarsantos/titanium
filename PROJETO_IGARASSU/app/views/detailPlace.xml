@@ -1,14 +1,22 @@
 <Alloy>
-	<Window>
+	<Window id="winDetail">
 		<Label id="lblPlace" />
 			<TableView id="tableViewDetailPlace" dataCollection="places" onClick="showDescriptionPlace" dataFilter="filterPlace">
 				<TableViewRow>
 						<View id="viewDetailPlaceTableViews">
 								<ImageView id="imgphotoPlace" image="{photo}" />
-								<View id="viewTitle">
+								<ImageView id="btnMap" class="btnMap" />
+								<ImageView id="btnFavorite" class="btnFavorite" />
 									<Label id="lblPlaceName" text="{place_name}" />
-									<Label id="lblPlaceName" text="{phone}" />
-								</View>
+									<Label id="lblPlacePrice" text="{price}" />
+									<Label id="lblPlaceAddress" text="{address}" />
+									<Label id="lblPlacePhone" text="{phone}" />
+									<Label id="lblPlaceDescription" text="{description_eng}" />
+
+
+
+
+
 						</View>
 				</TableViewRow>
 			</TableView>
