@@ -3,20 +3,14 @@
 		<Label id="lblPlace" />
 			<TableView id="tableViewDetailPlace" dataCollection="places" onClick="showDescriptionPlace" dataFilter="filterPlace">
 				<TableViewRow>
-						<View id="viewDetailPlaceTableViews">
+						<View id="viewDetailPlace">
 								<ImageView id="imgphotoPlace" image="{photo}" />
-								<ImageView id="btnMap" class="btnMap" />
-								<ImageView id="btnFavorite" class="btnFavorite" />
+							<View id="viewInfoDetailPlace">
 									<Label id="lblPlaceName" text="{place_name}" />
-									<Label id="lblPlacePrice" text="{price}" />
-									<Label id="lblPlaceAddress" text="{address}" />
 									<Label id="lblPlacePhone" text="{phone}" />
-									<Label id="lblPlaceDescription" text="{description_eng}" />
-
-
-
-
-
+									<ImageView id="btnMap" class="btnMap" />
+									<ImageView id="btnFavorite" class="btnFavorite" />
+							</View>
 						</View>
 				</TableViewRow>
 			</TableView>

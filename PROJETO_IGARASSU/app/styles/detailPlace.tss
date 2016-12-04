@@ -1,8 +1,10 @@
 
 "#imgphotoPlace": {
-  width: Ti.UI.FILL,
-  height: 250,
-  borderWidth: 5
+  height:96,
+  width:72,
+  left:5,
+  top:5,
+  bottom:5
 
 }
 
@@ -12,10 +14,6 @@
 
 "#tableViewDetailPlace": {
 
-}
-
-"#viewDetailPlaceTableViews": {
-  layout: "vertical"
 }
 /*
 "#viewDetailButtons": {
@@ -32,4 +30,21 @@
   image: "/favorite.png",
   width: Ti.UI.SIZE,
   height: Ti.UI.SIZE
+}
+
+"#viewDetailPlace": {
+  width: Ti.UI.FILL,
+  height: Ti.UI.SIZE,
+  layout: "horizontal"
+}
+
+"#viewInfoDetailPlace": {
+  height:Ti.UI.SIZE,
+  width:Ti.UI.SIZE,
+  layout:"vertical"
+}
+
+"Label":{
+	top:5,
+  	left:5
 }
