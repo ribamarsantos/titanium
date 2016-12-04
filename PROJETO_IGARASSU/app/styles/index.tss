@@ -1,20 +1,18 @@
 "#header": {
 	layout: "horizontal",
 	height: Ti.UI.SIZE,
-	backgroundColor: "#004C00"
+	backgroundColor: "white"
 }
 
 ".imgviewmenu": {
 	width: 96,
 	height: 96,
 	//image: "http://www.motorpress.com.br/static/images/uploads/ecosport_titanium_08_940x532.jpg",
-	image: "https://igarassu-project.herokuapp.com/imagens/bope_paintball.jpg",
+	//image: "https://igarassu-project.herokuapp.com/imagens/bope_paintball.jpg",
 	top: 10,
 	left: 10,
 	right: 10,
-	bottom: 10,
-
-	borderRadius: 100
+	bottom: 10
 }
 ".imgviewtemperature": {
 	width: 36,
@@ -34,6 +32,7 @@
 }
 
 "#viewMenu": {
+	width: Ti.UI.FILL,
 	height: Ti.UI.FILL,
 	layout: "vertical"
 }
@@ -70,4 +69,24 @@
 
 "#lblEvent": {
 		text: L('lbl_event')
+}
+
+"#imgEvent": {
+	image: "/event.png"
+}
+
+"#imgInformation": {
+	image: "/information.png"
+}
+
+"#imgBookMark": {
+	image: "/bookmark.png"
+}
+
+"#imgWhatToDo": {
+	image: "/whattodo.png"
+}
+"Label":{
+
+	color: "blue"
 }

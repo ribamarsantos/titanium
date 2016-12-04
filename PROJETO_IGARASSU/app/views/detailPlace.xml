@@ -1,15 +1,15 @@
 <Alloy>
-	<Window id="winDetail">
-		<Label id="lblPlace" />
+	<Window id="windowDetail">
 			<TableView id="tableViewDetailPlace" dataCollection="places" onClick="showDescriptionPlace" dataFilter="filterPlace">
 				<TableViewRow>
 						<View id="viewDetailPlace">
 								<ImageView id="imgphotoPlace" image="{photo}" />
 							<View id="viewInfoDetailPlace">
-									<Label id="lblPlaceName" text="{place_name}" />
-									<Label id="lblPlacePhone" text="{phone}" />
-									<ImageView id="btnMap" class="btnMap" />
-									<ImageView id="btnFavorite" class="btnFavorite" />
+									<Label id="lblPlaceName" text="{place_name}" class="lblTitle"/>
+									<Label id="lblPlacePhone" text="{phone}" class="lblSubTitle" autoLink="Ti.UI.AUTOLINK_PHONE_NUMBERS"  />
+							</View>
+							<View id="viewDetailPlaceButtons">
+								<ImageView id="imgbtnMap" text="{placelat}"/>
 							</View>
 						</View>
 				</TableViewRow>

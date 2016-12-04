@@ -92,37 +92,6 @@ function Controller() {
         backgroundColor: "teal"
     });
     $.__views.viewMenu.add($.__views.viewColumn01);
-    $.__views.__alloyId10 = Ti.UI.createView({
-        layout: "vertical",
-        height: Ti.UI.SIZE,
-        width: Ti.UI.SIZE,
-        id: "__alloyId10"
-    });
-    $.__views.viewColumn01.add($.__views.__alloyId10);
-    $.__views.__alloyId11 = Ti.UI.createImageView({
-        width: 96,
-        height: 96,
-        image: "https://igarassu-project.herokuapp.com/imagens/bope_paintball.jpg",
-        top: 10,
-        left: 10,
-        right: 10,
-        bottom: 10,
-        borderRadius: 100,
-        id: "__alloyId11"
-    });
-    $.__views.__alloyId10.add($.__views.__alloyId11);
-    showListPlace ? $.addListener($.__views.__alloyId11, "click", showListPlace) : __defers["$.__views.__alloyId11!click!showListPlace"] = true;
-    $.__views.lblWhatToDo = Ti.UI.createLabel({
-        font: {
-            fontSize: 16,
-            fontFamily: "Helvetica",
-            fontWeight: "bold"
-        },
-        text: L("lbl_whattodo"),
-        id: "lblWhatToDo"
-    });
-    $.__views.__alloyId10.add($.__views.lblWhatToDo);
-    showListPlace ? $.addListener($.__views.lblWhatToDo, "click", showListPlace) : __defers["$.__views.lblWhatToDo!click!showListPlace"] = true;
     $.__views.__alloyId12 = Ti.UI.createView({
         layout: "vertical",
         height: Ti.UI.SIZE,
@@ -142,30 +111,25 @@ function Controller() {
         id: "__alloyId13"
     });
     $.__views.__alloyId12.add($.__views.__alloyId13);
-    $.__views.lblFavorite = Ti.UI.createLabel({
+    showListPlace ? $.addListener($.__views.__alloyId13, "click", showListPlace) : __defers["$.__views.__alloyId13!click!showListPlace"] = true;
+    $.__views.lblWhatToDo = Ti.UI.createLabel({
         font: {
             fontSize: 16,
             fontFamily: "Helvetica",
             fontWeight: "bold"
         },
-        text: L("lbl_favorite"),
-        id: "lblFavorite"
+        text: L("lbl_whattodo"),
+        id: "lblWhatToDo"
     });
-    $.__views.__alloyId12.add($.__views.lblFavorite);
-    $.__views.viewColumn02 = Ti.UI.createView({
-        layout: "horizontal",
-        height: Ti.UI.SIZE,
-        id: "viewColumn02",
-        backgroundColor: "blue"
-    });
-    $.__views.viewMenu.add($.__views.viewColumn02);
+    $.__views.__alloyId12.add($.__views.lblWhatToDo);
+    showListPlace ? $.addListener($.__views.lblWhatToDo, "click", showListPlace) : __defers["$.__views.lblWhatToDo!click!showListPlace"] = true;
     $.__views.__alloyId14 = Ti.UI.createView({
         layout: "vertical",
         height: Ti.UI.SIZE,
         width: Ti.UI.SIZE,
         id: "__alloyId14"
     });
-    $.__views.viewColumn02.add($.__views.__alloyId14);
+    $.__views.viewColumn01.add($.__views.__alloyId14);
     $.__views.__alloyId15 = Ti.UI.createImageView({
         width: 96,
         height: 96,
@@ -178,16 +142,23 @@ function Controller() {
         id: "__alloyId15"
     });
     $.__views.__alloyId14.add($.__views.__alloyId15);
-    $.__views.lblInformation = Ti.UI.createLabel({
+    $.__views.lblFavorite = Ti.UI.createLabel({
         font: {
             fontSize: 16,
             fontFamily: "Helvetica",
             fontWeight: "bold"
         },
-        text: L("lbl_information"),
-        id: "lblInformation"
+        text: L("lbl_favorite"),
+        id: "lblFavorite"
     });
-    $.__views.__alloyId14.add($.__views.lblInformation);
+    $.__views.__alloyId14.add($.__views.lblFavorite);
+    $.__views.viewColumn02 = Ti.UI.createView({
+        layout: "horizontal",
+        height: Ti.UI.SIZE,
+        id: "viewColumn02",
+        backgroundColor: "blue"
+    });
+    $.__views.viewMenu.add($.__views.viewColumn02);
     $.__views.__alloyId16 = Ti.UI.createView({
         layout: "vertical",
         height: Ti.UI.SIZE,
@@ -207,6 +178,35 @@ function Controller() {
         id: "__alloyId17"
     });
     $.__views.__alloyId16.add($.__views.__alloyId17);
+    $.__views.lblInformation = Ti.UI.createLabel({
+        font: {
+            fontSize: 16,
+            fontFamily: "Helvetica",
+            fontWeight: "bold"
+        },
+        text: L("lbl_information"),
+        id: "lblInformation"
+    });
+    $.__views.__alloyId16.add($.__views.lblInformation);
+    $.__views.__alloyId18 = Ti.UI.createView({
+        layout: "vertical",
+        height: Ti.UI.SIZE,
+        width: Ti.UI.SIZE,
+        id: "__alloyId18"
+    });
+    $.__views.viewColumn02.add($.__views.__alloyId18);
+    $.__views.__alloyId19 = Ti.UI.createImageView({
+        width: 96,
+        height: 96,
+        image: "https://igarassu-project.herokuapp.com/imagens/bope_paintball.jpg",
+        top: 10,
+        left: 10,
+        right: 10,
+        bottom: 10,
+        borderRadius: 100,
+        id: "__alloyId19"
+    });
+    $.__views.__alloyId18.add($.__views.__alloyId19);
     $.__views.lblEvent = Ti.UI.createLabel({
         font: {
             fontSize: 16,
@@ -216,7 +216,7 @@ function Controller() {
         text: L("lbl_event"),
         id: "lblEvent"
     });
-    $.__views.__alloyId16.add($.__views.lblEvent);
+    $.__views.__alloyId18.add($.__views.lblEvent);
     exports.destroy = function() {};
     _.extend($, $.__views);
     var xhr = Ti.Network.createHTTPClient();
@@ -228,7 +228,7 @@ function Controller() {
     xhr.onerror = function(e) {
         alert(e);
     };
-    __defers["$.__views.__alloyId11!click!showListPlace"] && $.addListener($.__views.__alloyId11, "click", showListPlace);
+    __defers["$.__views.__alloyId13!click!showListPlace"] && $.addListener($.__views.__alloyId13, "click", showListPlace);
     __defers["$.__views.lblWhatToDo!click!showListPlace"] && $.addListener($.__views.lblWhatToDo, "click", showListPlace);
     _.extend($, exports);
 }

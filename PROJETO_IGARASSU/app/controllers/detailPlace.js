@@ -16,7 +16,7 @@ xhr.onload = function(){
 xhr.open('GET', 'http://igarassu-project.herokuapp.com/place');
 xhr.send();
 
-$.lblPlace.text = row.title;
+$.windowDetail.title = row.title;
 
 
 function filterPlace(collection){

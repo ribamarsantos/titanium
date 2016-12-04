@@ -4,7 +4,6 @@ var activities =[];
 var activities =[
   {title: L('diversao'),
   id   :1},
-
   {title: L('feiras'),
   id   :2},
   {title: L('hoteis'),
@@ -26,7 +25,7 @@ var activities =[
 $.tableViewListPlaces.data = activities;
 
 function showDetails(e){
-  var row = e.rowData;  
+  var row = e.rowData;
   var ctrl = Alloy.createController('detailPlace',row);
   if(OS_IOS){
     var navCtrl = Ti.UI.iOS.createNavigationWindow({

@@ -7,26 +7,26 @@
 			<Label id="lblTemperature"></Label>
 		</View>
 
-		<ScrollView id="viewMenu" backgroundColor="green" >
-			<View id="viewColumn01"  backgroundColor="teal">
+		<ScrollView id="viewMenu" backgroundColor="white" center="true">
+			<View id="viewColumn01"  backgroundColor="white">
 				<View  layout="vertical" height="Ti.UI.SIZE" width="Ti.UI.SIZE">
-					<ImageView  class="imgviewmenu" onClick="showListPlace" />
+					<ImageView id="imgWhatToDo" class="imgviewmenu" onClick="showListPlace" />
 					<Label id="lblWhatToDo" class="lblMenuItem" onClick="showListPlace"/>
 				</View>
 
 				<View layout="vertical" height="Ti.UI.SIZE" width="Ti.UI.SIZE">
-					<ImageView  class="imgviewmenu" />
+					<ImageView id="imgBookMark"  class="imgviewmenu" />
 					<Label id="lblFavorite" class="lblMenuItem"/>
 				</View>
 			</View>
 
-			<View id="viewColumn02" backgroundColor="blue">
+			<View id="viewColumn02" backgroundColor="white">
 				<View layout="vertical" height="Ti.UI.SIZE" width="Ti.UI.SIZE">
-					<ImageView  class="imgviewmenu" />
+					<ImageView id="imgInformation"  class="imgviewmenu" />
 					<Label id="lblInformation" class="lblMenuItem"/>
 				</View>
 				<View layout="vertical" height="Ti.UI.SIZE" width="Ti.UI.SIZE">
-					<ImageView  class="imgviewmenu" />
+					<ImageView id="imgEvent"  class="imgviewmenu" />
 					<Label id="lblEvent" class="lblMenuItem"/>
 				</View>
 			</View>
