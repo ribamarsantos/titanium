@@ -15,7 +15,7 @@
 			<string>br.com.ribasoft</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>projeto_igarassu</string>
+				<string>igarassu</string>
 			</array>
 		</dict>
 	</array>

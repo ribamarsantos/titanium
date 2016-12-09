@@ -9,9 +9,7 @@ function __processArg(obj, key) {
 
 function Controller() {
     function showDetails(e) {
-        var row = e.rowData;
-        var ctrl = Alloy.createController("detailPlace", row);
-        ctrl.getView().open();
+        Alloy.createController("detailPlace", e.rowData).getView().open();
     }
     require("alloy/controllers/BaseController").apply(this, Array.prototype.slice.call(arguments));
     this.__controllerPath = "listPlace";
@@ -30,46 +28,60 @@ function Controller() {
     var $ = this;
     var exports = {};
     var __defers = {};
-    $.__views.listPlace = Ti.UI.createWindow({
-        id: "listPlace"
+    $.__views.__alloyId16 = Ti.UI.createWindow({
+        id: "__alloyId16"
     });
-    $.__views.listPlace && $.addTopLevelView($.__views.listPlace);
     $.__views.tableViewListPlaces = Ti.UI.createTableView({
         id: "tableViewListPlaces"
     });
-    $.__views.listPlace.add($.__views.tableViewListPlaces);
+    $.__views.__alloyId16.add($.__views.tableViewListPlaces);
     showDetails ? $.addListener($.__views.tableViewListPlaces, "click", showDetails) : __defers["$.__views.tableViewListPlaces!click!showDetails"] = true;
+    $.__views.listPlaceWin = (require("ui").createNavigationWindow || Ti.UI.iOS.createNavigationWindow)({
+        window: $.__views.__alloyId16,
+        id: "listPlaceWin"
+    });
+    $.__views.listPlaceWin && $.addTopLevelView($.__views.listPlaceWin);
     exports.destroy = function() {};
     _.extend($, $.__views);
     $.args;
+    var height_row = 50;
     var activities = [];
     var activities = [ {
         title: L("diversao"),
-        id: 1
+        id: 1,
+        height: height_row
     }, {
         title: L("feiras"),
-        id: 2
+        id: 2,
+        height: height_row
     }, {
         title: L("hoteis"),
-        id: 3
+        id: 3,
+        height: height_row
     }, {
         title: L("igrejas"),
-        id: 4
+        id: 4,
+        height: height_row
     }, {
         title: L("monumentos_historicos"),
-        id: 5
+        id: 5,
+        height: height_row
     }, {
         title: L("museus"),
-        id: 6
+        id: 6,
+        height: height_row
     }, {
         title: L("pracas"),
-        id: 7
+        id: 7,
+        height: height_row
     }, {
         title: L("praias"),
-        id: 8
+        id: 8,
+        height: height_row
     }, {
         title: L("restaurantes"),
-        id: 9
+        id: 9,
+        height: height_row
     } ];
     $.tableViewListPlaces.data = activities;
     __defers["$.__views.tableViewListPlaces!click!showDetails"] && $.addListener($.__views.tableViewListPlaces, "click", showDetails);

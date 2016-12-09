@@ -321,10 +321,10 @@ bool KrollSetProperty(TiContextRef jsContext, TiObjectRef object, TiStringRef pr
 
 // forward declare these
 
-//@interface PROJETO_IGARASSUObject : NSObject
+//@interface IgarassuObject : NSObject
 //@end
 
-@interface PROJETO_IGARASSUObject (Private)
+@interface IgarassuObject (Private)
 -(NSDictionary*)modules;
 @end
 
@@ -348,9 +348,9 @@ void KrollPropertyNames(TiContextRef ctx, TiObjectRef object, TiPropertyNameAccu
 	{
 		id target = [o target];
 
-		if ([o isKindOfClass:[PROJETO_IGARASSUObject class]])
+		if ([o isKindOfClass:[IgarassuObject class]])
 		{
-			for (NSString *key in [[(PROJETO_IGARASSUObject*)o modules] allKeys])
+			for (NSString *key in [[(IgarassuObject*)o modules] allKeys])
 			{
 				TiStringRef value = TiStringCreateWithUTF8CString([key UTF8String]);
 				TiPropertyNameAccumulatorAddName(propertyNames,value);

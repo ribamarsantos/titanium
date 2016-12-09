@@ -1,5 +1,10 @@
 <Alloy>
-	<Window>
-		<TableView id="tableViewListPlaces" onClick="showDetails" />
-	</Window>
+	<NavigationWindow module ="ui" id="listPlaceWin">
+		<Window>
+			<LeftNavButton platform="ios">
+				<Button id="btnBack" onClick="closeWindow"/>
+			</LeftNavButton>
+			<TableView id="tableViewListPlaces" onClick="showDetails" />
+		</Window>
+	</NavigationWindow>
 </Alloy>

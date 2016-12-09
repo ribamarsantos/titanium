@@ -213,7 +213,7 @@
 	if (url != nil) {
 		DEPRECATED_REMOVED(@"UI.Window.url", @"2.0.0", @"6.0.0");
 		DebugLog(@"[ERROR] Please use require() to manage your application components.");
-		DebugLog(@"[ERROR] More infos: http://docs.appcelerator.com/platform/latest/#!/guide/CommonJS_Modules_in_PROJETO_IGARASSU");
+		DebugLog(@"[ERROR] More infos: http://docs.appcelerator.com/platform/latest/#!/guide/CommonJS_Modules_in_Igarassu");
 	}
 	
 	return [super _handleOpen:args];

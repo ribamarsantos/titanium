@@ -32,7 +32,7 @@ extern NSString * const TiExceptionInternalInconsistency;
 //Should be rare, but also useful if arguments are used improperly.
 extern NSString * const TiExceptionInternalInconsistency;
 
-//Rare exceptions to indicate a bug in the _projeto_igarassu code (Eg, function that a subclass should have implemented)
+//Rare exceptions to indicate a bug in the _igarassu code (Eg, function that a subclass should have implemented)
 extern NSString * const TiExceptionUnimplementedFunction;
 
 //Rare exception in the case of malloc failure
@@ -101,7 +101,7 @@ void DoProxyDelegateReadValuesWithKeysFromProxy(UIView<TiProxyDelegate> * target
 
 
 /**
- The base class for PROJETO_IGARASSU proxies.
+ The base class for Igarassu proxies.
  */
 @interface TiProxy : NSObject<KrollTargetable> {
 @public

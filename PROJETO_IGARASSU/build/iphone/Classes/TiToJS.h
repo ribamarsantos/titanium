@@ -7,8 +7,8 @@
  * WARNING: This is generated code. Modify at your own risk and without support.
  */
 
-#ifndef PROJETO_IGARASSU_TiToJS_h
-#define PROJETO_IGARASSU_TiToJS_h
+#ifndef Igarassu_TiToJS_h
+#define Igarassu_TiToJS_h
 
 #ifdef USE_JSCORE_FRAMEWORK
 

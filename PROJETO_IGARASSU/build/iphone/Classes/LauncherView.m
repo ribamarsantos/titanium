@@ -9,9 +9,9 @@
 
 
 // A good bit of this code was derived from the Three20 project
-// and was customized to work inside PROJETO_IGARASSU
+// and was customized to work inside Igarassu
 //
-// All modifications by PROJETO_IGARASSU are licensed under 
+// All modifications by Igarassu are licensed under 
 // the Apache License, Version 2.0
 //
 //

@@ -27,7 +27,7 @@
 //	but is internal ONLY, and should NOT be used by javascript.
 @property(nonatomic,readwrite,assign) BOOL showsCancelButton;
 
-#pragma mark - PROJETO_IGARASSU Internal Use
+#pragma mark - Igarassu Internal Use
 -(void)ensureSearchBarHeirarchy;
 @end
 

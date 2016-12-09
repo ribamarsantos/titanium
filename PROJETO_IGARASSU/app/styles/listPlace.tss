@@ -1,0 +1,10 @@
+
+".rows": {
+  top:15,
+  left: 10,
+  bottom: 10
+}
+
+"#btnBack[platform=ios]": {
+  systemButton:Ti.UI.iOS.SystemButton.REPLY
+}

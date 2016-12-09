@@ -58,7 +58,7 @@
     NSInteger activeAlertControllerCount;
 }
 
-//PROJETO_IGARASSU Support
+//Igarassu Support
 -(CGRect)resizeView;
 -(void)repositionSubviews;
 -(UIView *)topWindowProxyView;

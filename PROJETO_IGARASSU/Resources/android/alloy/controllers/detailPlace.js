@@ -8,40 +8,42 @@ function __processArg(obj, key) {
 }
 
 function Controller() {
-    function __alloyId11(e) {
+    function __alloyId10(e) {
         if (e && e.fromAdapter) return;
-        __alloyId11.opts || {};
-        var models = filterPlace(__alloyId10);
+        __alloyId10.opts || {};
+        var models = filterPlace(__alloyId9);
         var len = models.length;
         var rows = [];
         for (var i = 0; len > i; i++) {
             var __alloyId0 = models[i];
             __alloyId0.__transform = _.isFunction(__alloyId0.transform) ? __alloyId0.transform() : __alloyId0.toJSON();
-            var __alloyId2 = Ti.UI.createTableViewRow({});
-            rows.push(__alloyId2);
-            var __alloyId3 = Ti.UI.createView({
+            var __alloyId1 = Ti.UI.createTableViewRow({
+                identificador: __alloyId0.__transform.id
+            });
+            rows.push(__alloyId1);
+            var __alloyId2 = Ti.UI.createView({
                 layout: "horizontal",
                 width: Ti.UI.FILL,
                 height: Ti.UI.SIZE
             });
-            __alloyId2.add(__alloyId3);
-            var __alloyId4 = Ti.UI.createImageView({
-                height: 96,
+            __alloyId1.add(__alloyId2);
+            var __alloyId3 = Ti.UI.createImageView({
+                height: 56,
                 width: "20%",
                 left: 5,
                 top: 5,
                 bottom: 5,
                 image: __alloyId0.__transform.photo
             });
-            __alloyId3.add(__alloyId4);
-            var __alloyId5 = Ti.UI.createView({
+            __alloyId2.add(__alloyId3);
+            var __alloyId4 = Ti.UI.createView({
                 left: 8,
                 height: Ti.UI.SIZE,
                 width: "60%",
                 layout: "vertical"
             });
-            __alloyId3.add(__alloyId5);
-            var __alloyId6 = Ti.UI.createLabel({
+            __alloyId2.add(__alloyId4);
+            var __alloyId5 = Ti.UI.createLabel({
                 top: 5,
                 left: 5,
                 font: {
@@ -49,8 +51,8 @@ function Controller() {
                 },
                 text: __alloyId0.__transform.place_name
             });
-            __alloyId5.add(__alloyId6);
-            var __alloyId7 = Ti.UI.createLabel({
+            __alloyId4.add(__alloyId5);
+            var __alloyId6 = Ti.UI.createLabel({
                 top: 5,
                 left: 5,
                 font: {
@@ -60,19 +62,18 @@ function Controller() {
                 text: __alloyId0.__transform.phone,
                 autoLink: Ti.UI.AUTOLINK_PHONE_NUMBERS
             });
-            __alloyId5.add(__alloyId7);
-            var __alloyId8 = Ti.UI.createView({
+            __alloyId4.add(__alloyId6);
+            var __alloyId7 = Ti.UI.createView({
                 left: 5,
-                width: "15%"
+                width: "10%"
             });
-            __alloyId3.add(__alloyId8);
-            var __alloyId9 = Ti.UI.createImageView({
+            __alloyId2.add(__alloyId7);
+            var __alloyId8 = Ti.UI.createImageView({
                 width: "50%",
                 height: Ti.UI.SIZE,
-                image: "/location.png",
-                text: __alloyId0.__transform.placelat
+                image: "/location.png"
             });
-            __alloyId8.add(__alloyId9);
+            __alloyId7.add(__alloyId8);
         }
         $.__views.tableViewDetailPlace.setData(rows);
     }
@@ -81,7 +82,17 @@ function Controller() {
             place_type: row.id
         });
     }
-    function showDescriptionPlace() {}
+    function showMoreDetailPlace(e) {
+        var objplace = Alloy.Collections.places.where({
+            id: e.rowData.identificador
+        });
+        var ctrl = Alloy.createController("descriptionPlace", objplace);
+        try {
+            ctrl.getView().open();
+        } catch (e) {
+            Ti.API.info(e.message);
+        } finally {}
+    }
     require("alloy/controllers/BaseController").apply(this, Array.prototype.slice.call(arguments));
     this.__controllerPath = "detailPlace";
     this.args = arguments[0] || {};
@@ -102,16 +113,20 @@ function Controller() {
     $.__views.windowDetail = Ti.UI.createWindow({
         id: "windowDetail"
     });
-    $.__views.windowDetail && $.addTopLevelView($.__views.windowDetail);
     $.__views.tableViewDetailPlace = Ti.UI.createTableView({
         id: "tableViewDetailPlace"
     });
     $.__views.windowDetail.add($.__views.tableViewDetailPlace);
-    var __alloyId10 = Alloy.Collections["places"] || places;
-    __alloyId10.on("fetch destroy change add remove reset", __alloyId11);
-    showDescriptionPlace ? $.addListener($.__views.tableViewDetailPlace, "click", showDescriptionPlace) : __defers["$.__views.tableViewDetailPlace!click!showDescriptionPlace"] = true;
+    var __alloyId9 = Alloy.Collections["places"] || places;
+    __alloyId9.on("fetch destroy change add remove reset", __alloyId10);
+    showMoreDetailPlace ? $.addListener($.__views.tableViewDetailPlace, "click", showMoreDetailPlace) : __defers["$.__views.tableViewDetailPlace!click!showMoreDetailPlace"] = true;
+    $.__views.detailPlace = (require("ui").createNavigationWindow || Ti.UI.iOS.createNavigationWindow)({
+        window: $.__views.windowDetail,
+        id: "detailPlace"
+    });
+    $.__views.detailPlace && $.addTopLevelView($.__views.detailPlace);
     exports.destroy = function() {
-        __alloyId10 && __alloyId10.off("fetch destroy change add remove reset", __alloyId11);
+        __alloyId9 && __alloyId9.off("fetch destroy change add remove reset", __alloyId10);
     };
     _.extend($, $.__views);
     var row = $.args;
@@ -120,13 +135,12 @@ function Controller() {
         alert(e);
     };
     xhr.onload = function() {
-        Ti.API.info(this.responseText);
         Alloy.Collections.places.reset(JSON.parse(this.responseText));
     };
     xhr.open("GET", "http://igarassu-project.herokuapp.com/place");
     xhr.send();
     $.windowDetail.title = row.title;
-    __defers["$.__views.tableViewDetailPlace!click!showDescriptionPlace"] && $.addListener($.__views.tableViewDetailPlace, "click", showDescriptionPlace);
+    __defers["$.__views.tableViewDetailPlace!click!showMoreDetailPlace"] && $.addListener($.__views.tableViewDetailPlace, "click", showMoreDetailPlace);
     _.extend($, exports);
 }
 

@@ -3,8 +3,9 @@ var Alloy = require("alloy"), _ = require("alloy/underscore")._, model, collecti
 exports.definition = {
     config: {
         columns: {
-            place_type: "int",
-            name: "text",
+            id: "integer",
+            place_type: "integer",
+            place_name: "text",
             description_pt: "text",
             description_eng: "text",
             description_esp: "text",
@@ -13,8 +14,8 @@ exports.definition = {
             district: "text",
             phone: "text",
             photo: "text",
-            placeLat: "real",
-            placeLong: "real"
+            placelat: "real",
+            placelong: "real"
         },
         adapter: {
             type: "sql",

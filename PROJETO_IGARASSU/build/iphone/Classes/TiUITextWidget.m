@@ -265,7 +265,7 @@
 }
 
 
-#pragma mark - PROJETO_IGARASSU Internal Use Only
+#pragma mark - Igarassu Internal Use Only
 -(void)updateKeyboardStatus
 {
     if ( ([[[TiApp app] controller] keyboardVisible]) && ([[[TiApp app] controller] keyboardFocusedProxy] == [self proxy]) ) {

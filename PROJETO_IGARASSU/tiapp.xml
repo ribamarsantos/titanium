@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><ti:app xmlns:ti="http://ti.appcelerator.org">
 	<id>br.com.ribasoft</id>
-	<name>PROJETO_IGARASSU</name>
+	<name>Igarassu</name>
 	<version>1.0</version>
-	<publisher>not specified</publisher>
-	<url>http://ribasoft.com.br</url>
+	<publisher>Ribamar Santos</publisher>
+	<url>http://www.ribasoft.com.br</url>
 	<description/>
 	<copyright>not specified</copyright>
 	<icon>appicon.png</icon>
@@ -38,6 +38,13 @@
 		</plist>
 	</ios>
 	<android xmlns:android="http://schemas.android.com/apk/res/android">
+		<manifest>
+				<application>
+						<!-- Replace "PASTE YOUR GOOGLE MAPS API KEY HERE" with the Google API key you obtained -->
+						<meta-data android:name="com.google.android.maps.v2.API_KEY"
+								android:value="AIzaSyCa85y37Eh1EVujFSl0RfMG5erQ0n7gDl0"/>
+				</application>
+		</manifest>
 	</android>
 	<mobileweb>
 		<precache>
@@ -49,11 +56,12 @@
 		<theme>default</theme>
 	</mobileweb>
 	<modules>
+		<module platform="android">ti.map</module>
 	</modules>
 	<deployment-targets>
 		<target device="android">true</target>
-		<target device="mobileweb">true</target>
-		<target device="windows">true</target>
+		<target device="mobileweb">false</target>
+		<target device="windows">false</target>
 	</deployment-targets>
 	<sdk-version>6.0.0.GA</sdk-version>
 <plugins><plugin version="1.0">ti.alloy</plugin>

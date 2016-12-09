@@ -9,7 +9,7 @@ xhr.onerror = function(e){
 }
 
 xhr.onload = function(){
-  Ti.API.info(this.responseText);
+  //Ti.API.info(this.responseText);
   Alloy.Collections.places.reset(JSON.parse(this.responseText));
 }
 
@@ -23,12 +23,28 @@ function filterPlace(collection){
   return collection.where({place_type: row.id});
 }
 
-function showDetails(e){
-	// var fugitive = Alloy.Collections.fugitives.get(e.rowData.identificador);
-	// var ctrl = Alloy.createController('fugitiveDetails', fugitive);
-	// $.fugitiveTab.open(ctrl.getView());
-}
+function showMoreDetailPlace(e){
 
-function showDescriptionPlace(e){
-  //
+  var objplace = Alloy.Collections.places.where({id: e.rowData.identificador});
+  //Ti.API.info(objplace.id);
+  //  Ti.API.info(JSON.stringify(objplace[0]));
+  var ctrl = Alloy.createController('descriptionPlace', objplace);
+
+  try {
+    if(OS_IOS){
+      var navCtrl = Ti.UI.iOS.createNavigationWindow({
+        modal: true,
+        window: ctrl.getView()
+      });
+
+      ctrl.navWindow = navCtrl;
+      navCtrl.open();
+    }else{
+      ctrl.getView().open();
+    }
+  } catch (e) {
+    Ti.API.info(e.message);;
+  } finally {
+
+  }
 }

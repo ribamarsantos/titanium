@@ -32,7 +32,7 @@ extern NSString * const TI_APPLICATION_DEPLOYTYPE;
 extern NSString * const TI_APPLICATION_GUID;
 extern NSString * const TI_APPLICATION_BUILD_TYPE;
 
-NSString * PROJETO_IGARASSU$ModuleRequireFormat = @"(function(exports){"
+NSString * Igarassu$ModuleRequireFormat = @"(function(exports){"
 		"var __OXP=exports;var module={'exports':exports};var __dirname=\"%@\";var __filename=\"%@\";%@;\n"
 		"if(module.exports !== __OXP){return module.exports;}"
 		"return exports;})({})";
@@ -42,7 +42,7 @@ NSString * PROJETO_IGARASSU$ModuleRequireFormat = @"(function(exports){"
 void TiBindingRunLoopAnnounceStart(TiBindingRunLoop runLoop);
 
 
-@implementation PROJETO_IGARASSUObject
+@implementation IgarassuObject
 
 -(NSDictionary*)modules
 {
@@ -332,7 +332,7 @@ CFMutableSetRef	krollBridgeRegistry = nil;
 	[self removeProxies];
 	RELEASE_TO_NIL(preload);
 	RELEASE_TO_NIL(context);
-	RELEASE_TO_NIL(_projeto_igarassu);
+	RELEASE_TO_NIL(_igarassu);
 	OSSpinLockLock(&krollBridgeRegistryLock);
 	CFSetRemoveValue(krollBridgeRegistry, self);
 	OSSpinLockUnlock(&krollBridgeRegistryLock);
@@ -540,7 +540,7 @@ CFMutableSetRef	krollBridgeRegistry = nil;
 -(void)gc
 {
 	[context gc];
-	[_projeto_igarassu gc];
+	[_igarassu gc];
 }
 
 #pragma mark Delegate
@@ -559,18 +559,18 @@ CFMutableSetRef	krollBridgeRegistry = nil;
 
 -(void)didStartNewContext:(KrollContext*)kroll
 {
-	// create PROJETO_IGARASSU global object
+	// create Igarassu global object
 	NSAutoreleasePool* pool = [[NSAutoreleasePool alloc] init];
 
-	// Load the "PROJETO_IGARASSU" object into the global scope
+	// Load the "Igarassu" object into the global scope
 	NSString *basePath = (url==nil) ? [TiHost resourcePath] : [[[url path] stringByDeletingLastPathComponent] stringByAppendingPathComponent:@"."];
-	_projeto_igarassu = [[PROJETO_IGARASSUObject alloc] initWithContext:kroll host:host context:self baseURL:[NSURL fileURLWithPath:basePath]];
+	_igarassu = [[IgarassuObject alloc] initWithContext:kroll host:host context:self baseURL:[NSURL fileURLWithPath:basePath]];
 
 	TiContextRef jsContext = [kroll context];
-	TiValueRef tiRef = [KrollObject toValue:kroll value:_projeto_igarassu];
+	TiValueRef tiRef = [KrollObject toValue:kroll value:_igarassu];
 
-	NSString *_projeto_igarassuNS = [NSString stringWithFormat:@"T%sanium","it"];
-	TiStringRef prop = TiStringCreateWithCFString((CFStringRef) _projeto_igarassuNS);
+	NSString *_igarassuNS = [NSString stringWithFormat:@"T%sanium","it"];
+	TiStringRef prop = TiStringCreateWithCFString((CFStringRef) _igarassuNS);
 	TiStringRef prop2 = TiStringCreateWithCFString((CFStringRef) [NSString stringWithFormat:@"%si","T"]);
 	TiObjectRef globalRef = TiContextGetGlobalObject(jsContext);
 	TiObjectSetProperty(jsContext, globalRef, prop, tiRef,
@@ -592,7 +592,7 @@ CFMutableSetRef	krollBridgeRegistry = nil;
 	{
 		for (NSString *name in preload)
 		{
-			KrollObject *ti = (KrollObject*)[_projeto_igarassu valueForKey:name];
+			KrollObject *ti = (KrollObject*)[_igarassu valueForKey:name];
 			NSDictionary *values = [preload valueForKey:name];
 			for (id key in values)
 			{
@@ -646,7 +646,7 @@ CFMutableSetRef	krollBridgeRegistry = nil;
 		NSNotification *notification = [NSNotification notificationWithName:kTiContextShutdownNotification object:self];
 		[[NSNotificationCenter defaultCenter] postNotification:notification];
 	}
-	[_projeto_igarassu gc];
+	[_igarassu gc];
 
 	if (shutdownCondition)
 	{
@@ -661,7 +661,7 @@ CFMutableSetRef	krollBridgeRegistry = nil;
 {
 	TiThreadPerformOnMainThread(^{[self unregisterForMemoryWarning];}, NO);
 	[self removeProxies];
-	RELEASE_TO_NIL(_projeto_igarassu);
+	RELEASE_TO_NIL(_igarassu);
 	RELEASE_TO_NIL(console);
 	RELEASE_TO_NIL(context);
 	RELEASE_TO_NIL(preload);
@@ -763,7 +763,7 @@ CFMutableSetRef	krollBridgeRegistry = nil;
 	NSString *filename = [[sourceURL path] stringByReplacingOccurrencesOfString:[[[NSBundle mainBundle] resourceURL] path] withString:@""];
 	NSString *dirname = [filename stringByDeletingLastPathComponent];
 
-	NSString *js = [[NSString alloc] initWithFormat:PROJETO_IGARASSU$ModuleRequireFormat, dirname, filename, code];
+	NSString *js = [[NSString alloc] initWithFormat:Igarassu$ModuleRequireFormat, dirname, filename, code];
 
 	/* This most likely should be integrated with normal code flow, but to
 	 * minimize impact until a in-depth reconsideration of KrollContext can be
@@ -982,7 +982,7 @@ CFMutableSetRef	krollBridgeRegistry = nil;
 
 
 	if (![wrapper respondsToSelector:@selector(replaceValue:forKey:notification:)]) {
-		@throw [NSException exceptionWithName:@"org.projeto_igarassu.kroll"
+		@throw [NSException exceptionWithName:@"org.igarassu.kroll"
 									   reason:[NSString stringWithFormat:@"Module \"%@\" failed to leave a valid exports object", filename]
 									 userInfo:nil];
 	}

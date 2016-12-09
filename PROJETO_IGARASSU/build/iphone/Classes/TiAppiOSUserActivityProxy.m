@@ -15,7 +15,7 @@
 
 @implementation TiAppiOSUserActivityProxy
 
-#pragma mark PROJETO_IGARASSU Proxy components
+#pragma mark Igarassu Proxy components
 
 -(NSString*)apiName
 {
@@ -197,7 +197,7 @@
 - (void)userActivityWillSave:(NSUserActivity *)userActivity
 {
     if([self _hasListeners:@"useractivitywillsave"]){
-        DebugLog(@"[WARN] PROJETO_IGARASSU.App.iOS.UserActivity.useractivitywillsave event is deprecated. Update user activity and then set PROJETO_IGARASSU.App.iOS.UserActivity.needsSave property to true if you need it to be saved before handing it off to another device.");
+        DebugLog(@"[WARN] Igarassu.App.iOS.UserActivity.useractivitywillsave event is deprecated. Update user activity and then set Igarassu.App.iOS.UserActivity.needsSave property to true if you need it to be saved before handing it off to another device.");
         [self fireEvent:@"useractivitywillsave" withObject:[[self copyActivity] autorelease]];
     }
 }

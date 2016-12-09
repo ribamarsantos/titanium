@@ -13,7 +13,7 @@
 @class TiHost;
 
 /**
- The base class for all PROJETO_IGARASSU modules
+ The base class for all Igarassu modules
  */
 @interface TiModule : TiProxy 
 {
@@ -51,30 +51,30 @@
 // lifecycle
 
 /**
- PROJETO_IGARASSU Platform calls this method on startup.
+ Igarassu Platform calls this method on startup.
  */
 -(void)startup;
 
 /**
- PROJETO_IGARASSU Platform calls this method on shutdown.
+ Igarassu Platform calls this method on shutdown.
  @param sender The sender of the event.
  */
 -(void)shutdown:(id)sender;
 
 /**
- PROJETO_IGARASSU Platform calls this method on suspend.
+ Igarassu Platform calls this method on suspend.
  @param sender The sender of the event.
  */
 -(void)suspend:(id)sender;
 
 /**
- PROJETO_IGARASSU Platform calls this method on entering background.
+ Igarassu Platform calls this method on entering background.
  @param sender The sender of the event.
  */
 -(void)paused:(id)sender;
 
 /**
- PROJETO_IGARASSU Platform calls this method on resume.
+ Igarassu Platform calls this method on resume.
  @param sender The sender of the event.
  */
 -(void)resume:(id)sender;

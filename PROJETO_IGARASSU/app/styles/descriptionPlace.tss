@@ -1,0 +1,74 @@
+
+"#viewDescription": {
+  layout: "vertical",
+  width: Ti.UI.FILL,
+  height: Ti.UI.FILL,
+  backgroundColor: "orange"
+}
+
+"#viewBtn": {
+
+  backgroundColor: "gray",
+  layout: "horizontal",
+  height: 60,
+  width: Ti.UI.FILL
+}
+
+"#imgPlace": {
+  width: Ti.UI.FILL,
+  height: 200,
+  top: 10,
+  left: 10,
+  right: 10,
+  bottom: 10
+}
+
+"#btnFavorite": {
+  textAlign: Ti.UI.TEXT_ALIGNMENT_RIGHT,
+  width: 45,
+    left: '70%',
+  height: 45,
+  image: "/favorite.png",
+  top: 7
+}
+
+"#btnMap": {
+  textAlign: Ti.UI.TEXT_ALIGNMENT_RIGHT,
+  width: 45,
+  height: 45,
+  image: "/location.png",
+  top: 7
+}
+
+"Label": {
+  color: "white"
+}
+
+/*"Window": {
+  layout: "vertical",
+  height: Ti.UI.FILL,
+  width: Ti.UI.FILL
+}*/
+
+"#lblPhone": {
+  autoLink: Ti.UI.AUTOLINK_PHONE_NUMBERS
+}
+/*
+"#lblAddress": {
+  autoLink:  Ti.UI.AUTOLINK_MAP_ADDRESSES
+}*/
+
+"#lblPrice": {
+  textAlign: Ti.UI.TEXT_ALIGNMENT_RIGHT
+}
+
+"ScrollView": {
+  layout: "vertical",
+  height: Ti.UI.FILL,
+  width: Ti.UI.FILL
+}
+
+"#lblDescription": {
+  left: 10,
+  textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+}

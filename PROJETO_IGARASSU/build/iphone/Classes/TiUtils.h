@@ -39,7 +39,7 @@ typedef enum {
 } EncodingError;
 
 /**
- PROJETO_IGARASSU orientation flags.
+ Igarassu orientation flags.
  */
 typedef enum
 {

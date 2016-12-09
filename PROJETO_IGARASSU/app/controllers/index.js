@@ -4,20 +4,9 @@ var link = "http://api.openweathermap.org/data/2.5/weather?id=3398352&appid=6898
 
 // FUNCTIONS
 function showListPlace(e){
-  var ctrl = Alloy.createController('listPlace');
-
-  if(OS_IOS){
-    var navCtrl = Ti.UI.iOS.createNavigationWindow({
-      modal: true,
-      window: ctrl.getView()
-    });
-
-    ctrl.navWindow = navCtrl;
-    navCtrl.open();
-  }else{
-    ctrl.getView().open();
-  }
-
+  Alloy.createController('listPlace').
+      getView().
+      open();
 }
 
 function getTemperatureInfo() {

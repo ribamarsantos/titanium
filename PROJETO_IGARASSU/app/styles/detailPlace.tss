@@ -1,6 +1,6 @@
 
 "#imgphotoPlace": {
-  height:96,
+  height:56,
   width:'20%',
   left:5,
   top:5,
@@ -28,7 +28,7 @@
 
 "#viewDetailPlaceButtons": {
   left: 5,
-  width: '15%'
+  width: '10%'
 }
 
 

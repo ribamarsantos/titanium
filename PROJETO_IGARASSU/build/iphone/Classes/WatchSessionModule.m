@@ -56,7 +56,7 @@
 @end
 
 @implementation WatchSessionModule
-#pragma mark PROJETO_IGARASSU components
+#pragma mark Igarassu components
 
 -(NSString*)apiName
 {

@@ -1,0 +1,21 @@
+<Alloy>
+	<Window id="content">
+		<ScrollView id="scrollView" showVerticalScrollIndicator="true" showHorizontalScrollIndicator="true">
+
+			<View id="viewDescription">
+
+			<ImageView id="imgPlace" />
+			<View id="viewBtn">
+				<ImageView id="btnFavorite" />
+				<ImageView id="btnMap" onClick="showMap" />
+			</View>
+			<Label id="lblAddress" />
+			<Label id="lblPrice" />
+			<Label id="lblPhone" />
+			<Label id="lblDescription" />
+
+		</View>
+	</ScrollView>
+
+	</Window>
+</Alloy>

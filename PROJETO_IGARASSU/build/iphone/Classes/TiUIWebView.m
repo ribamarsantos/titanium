@@ -22,7 +22,7 @@
 #import "Base64Transcoder.h"
 
 extern NSString * const TI_APPLICATION_ID;
-static NSString * const kPROJETO_IGARASSUJavascript = @"Ti.App={};Ti.API={};Ti.App._listeners={};Ti.App._listener_id=1;Ti.App.id=Ti.appId;Ti.App._xhr=XMLHttpRequest;"
+static NSString * const kIgarassuJavascript = @"Ti.App={};Ti.API={};Ti.App._listeners={};Ti.App._listener_id=1;Ti.App.id=Ti.appId;Ti.App._xhr=XMLHttpRequest;"
 		"Ti._broker=function(module,method,data){try{var url='app://'+Ti.appId+'/_TiA0_'+Ti.pageToken+'/'+module+'/'+method+'?'+Ti.App._JSON(data,1);"
 			"var xhr=new Ti.App._xhr();xhr.open('GET',url,false);xhr.send()}catch(X){}};"
 		"Ti._hexish=function(a){var r='';var e=a.length;var c=0;var h;while(c<e){h=a.charCodeAt(c++).toString(16);r+='\\\\u';var l=4-h.length;while(l-->0){r+='0'};r+=h}return r};"
@@ -221,7 +221,7 @@ NSString *HTMLTextEncodingNameForStringEncoding(NSStringEncoding encoding)
 	return [NSURL URLWithString:[[NSString stringWithFormat:@"app://%@/%@",TI_APPLICATION_ID,path] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
 }
 
-- (NSString *)_projeto_igarassuInjection
+- (NSString *)_igarassuInjection
 {
 	if (pageToken==nil) {
 		pageToken = [[NSString stringWithFormat:@"%lu",(unsigned long)[self hash]] retain];
@@ -231,7 +231,7 @@ NSString *HTMLTextEncodingNameForStringEncoding(NSStringEncoding encoding)
 	[html appendString:@"<script id='__ti_injection'>"];
 	NSString *ti = [NSString stringWithFormat:@"%@%s",@"Ti","tanium"];
 	[html appendFormat:@"window.%@={};window.Ti=%@;Ti.pageToken=%@;Ti.appId='%@';",ti,ti,pageToken,TI_APPLICATION_ID];
-	[html appendString:kPROJETO_IGARASSUJavascript];
+	[html appendString:kIgarassuJavascript];
 	[html appendString:@"</script>"];
 	return html;
 }
@@ -241,7 +241,7 @@ NSString *HTMLTextEncodingNameForStringEncoding(NSStringEncoding encoding)
 	if ([content length] == 0) {
 		return content;
 	}
-	// attempt to make well-formed HTML and inject in our PROJETO_IGARASSU bridge code
+	// attempt to make well-formed HTML and inject in our Igarassu bridge code
 	// However, we only do this if the content looks like HTML
 	NSRange range = [content rangeOfString:@"<html"];
 	if (range.location == NSNotFound) {
@@ -278,7 +278,7 @@ NSString *HTMLTextEncodingNameForStringEncoding(NSStringEncoding encoding)
 	if (baseURL == nil) {
 		baseURL = [NSURL fileURLWithPath:[TiHost resourcePath]];
 	}
-	content = [[self class] content:content withInjection:[self _projeto_igarassuInjection]];
+	content = [[self class] content:content withInjection:[self _igarassuInjection]];
 	
 	[self ensureLocalProtocolHandler];
 	[[self webview] loadData:[content dataUsingEncoding:encoding] MIMEType:mimeType textEncodingName:textEncodingName baseURL:baseURL];
@@ -705,7 +705,7 @@ NSString *HTMLTextEncodingNameForStringEncoding(NSStringEncoding encoding)
 			reloadMethod = @selector(setUrl_:);
 		}
 		if ([scheme isEqualToString:@"file"] || [scheme isEqualToString:@"app"]) {
-			[NSURLProtocol setProperty:[self _projeto_igarassuInjection] forKey:kContentInjection inRequest:(NSMutableURLRequest *)request];
+			[NSURLProtocol setProperty:[self _igarassuInjection] forKey:kContentInjection inRequest:(NSMutableURLRequest *)request];
 		}
 		return YES;
 	}

@@ -9,9 +9,9 @@
 
 NSString * const TI_APPLICATION_DEPLOYTYPE = @"development";
 NSString * const TI_APPLICATION_ID = @"br.com.ribasoft";
-NSString * const TI_APPLICATION_PUBLISHER = @"not specified";
-NSString * const TI_APPLICATION_URL = @"http://ribasoft.com.br";
-NSString * const TI_APPLICATION_NAME = @"PROJETO_IGARASSU";
+NSString * const TI_APPLICATION_PUBLISHER = @"Ribamar Santos";
+NSString * const TI_APPLICATION_URL = @"http://www.ribasoft.com.br";
+NSString * const TI_APPLICATION_NAME = @"Igarassu";
 NSString * const TI_APPLICATION_VERSION = @"1.0";
 NSString * const TI_APPLICATION_DESCRIPTION = @"";
 NSString * const TI_APPLICATION_COPYRIGHT = @"not specified";

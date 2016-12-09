@@ -45,7 +45,7 @@
     BOOL rotatedWhileScrolling;
 }
 
-#pragma mark - PROJETO_IGARASSU Internal Use Only
+#pragma mark - Igarassu Internal Use Only
 -(void)manageRotation;
 -(UIScrollView*)scrollview;
 -(void)setCurrentPage:(id)page animated:(NSNumber*)animate;

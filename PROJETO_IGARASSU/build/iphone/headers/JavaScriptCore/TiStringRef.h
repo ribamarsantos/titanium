@@ -1,8 +1,8 @@
 /**
- * PROJETO_IGARASSU PROJETO_IGARASSU License
- * This source code and all modifications done by PROJETO_IGARASSU
+ * Igarassu Igarassu License
+ * This source code and all modifications done by Igarassu
  * are licensed under the Apache Public License (version 2) and
- * are Copyright (c) 2009-2014 by PROJETO_IGARASSU, Inc.
+ * are Copyright (c) 2009-2014 by Igarassu, Inc.
  */
 
 /*

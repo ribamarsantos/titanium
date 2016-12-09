@@ -1178,9 +1178,9 @@ expectedTotalBytes:(int64_t)expectedTotalBytes {
     UIDevice *currentDevice = [UIDevice currentDevice];
     NSString *currentLocaleIdentifier = [[NSLocale currentLocale] localeIdentifier];
     NSString *currentDeviceInfo = [NSString stringWithFormat:@"%@/%@; %@; %@;",[currentDevice model],[currentDevice systemVersion],[currentDevice systemName],currentLocaleIdentifier];
-    NSString *kPROJETO_IGARASSUUserAgentPrefix = [NSString stringWithFormat:@"%s%s%s %s%s","Appc","eler","ator","Tita","nium"];
+    NSString *kIgarassuUserAgentPrefix = [NSString stringWithFormat:@"%s%s%s %s%s","Appc","eler","ator","Tita","nium"];
     
-    return [[NSString stringWithFormat:@"%@/%s (%@)",kPROJETO_IGARASSUUserAgentPrefix,TI_VERSION_STR,currentDeviceInfo] retain];
+    return [[NSString stringWithFormat:@"%@/%s (%@)",kIgarassuUserAgentPrefix,TI_VERSION_STR,currentDeviceInfo] retain];
 }
 
 - (NSString*)userAgent
@@ -1387,7 +1387,7 @@ performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem
             errorString = [error localizedDescription];
         } else {
             // If we have no data...
-            // This should never happen on a PROJETO_IGARASSU app using the node.js CLI
+            // This should never happen on a Igarassu app using the node.js CLI
             errorString = @"File not found";
         }
         if(errorString != nil) {

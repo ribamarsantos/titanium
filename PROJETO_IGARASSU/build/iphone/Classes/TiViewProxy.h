@@ -17,7 +17,7 @@
  */
 @protocol TiKeyboardFocusableView
 
-#pragma mark Public PROJETO_IGARASSU APIs.
+#pragma mark Public Igarassu APIs.
 
 /**
  Tells the view to focus.

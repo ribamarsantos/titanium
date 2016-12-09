@@ -1,9 +1,9 @@
 {
 	"files": {
 		"Info.plist": {
-			"hash": "908195774fdb9ee629f49d82128a0c48",
+			"hash": "e702d9128e1d49d633ce2206cf939c84",
 			"mtime": 0,
-			"size": 1808
+			"size": 1800
 		},
 		"6.0.0.GA/iphone/libTiCore.a": {
 			"hash": null,
@@ -3256,12 +3256,12 @@
 			"size": 33468
 		},
 		"6.0.0.GA/iphone/iphone/Titanium_Prefix.pch": {
-			"hash": "e742dca2058b958b1f6ee16278ad593a",
+			"hash": "9f3a87abf4414c7b17cb85919489699d",
 			"mtime": "2016-12-01T02:22:02.000Z",
 			"size": 375
 		},
 		"6.0.0.GA/iphone/iphone/Titanium.xcodeproj/xcshareddata/xcschemes/Titanium.xcscheme": {
-			"hash": "63dc49a0f251f67361e844293e27648e",
+			"hash": "28f8290178fee133a857f8b7d6ae3c66",
 			"mtime": "2016-12-01T02:22:02.000Z",
 			"size": 3284
 		},
@@ -3270,9 +3270,39 @@
 			"mtime": "2016-12-03T01:53:19.000Z",
 			"size": 175297
 		},
+		"bookmark.png": {
+			"hash": "4a73191c525e9395bf79cc1037a64329",
+			"mtime": "2016-12-04T16:35:06.000Z",
+			"size": 4346
+		},
+		"event.png": {
+			"hash": "8d66b542943e288637307e3ef50bb16b",
+			"mtime": "2016-12-04T16:35:06.000Z",
+			"size": 2147
+		},
+		"favorite.png": {
+			"hash": "9db993b28efd5aaec25fbcdfd23cf8c0",
+			"mtime": "2016-12-04T16:35:06.000Z",
+			"size": 7764
+		},
+		"information.png": {
+			"hash": "228041c3e96ede8afd76a8ba14dc84ea",
+			"mtime": "2016-12-04T16:35:06.000Z",
+			"size": 6005
+		},
+		"location.png": {
+			"hash": "4e777a488906f9dc4ed278521b1b3a75",
+			"mtime": "2016-12-04T16:35:06.000Z",
+			"size": 6104
+		},
+		"whattodo.png": {
+			"hash": "d2f048e731a5796d8dc21f514cefdb23",
+			"mtime": "2016-12-04T16:35:06.000Z",
+			"size": 2273
+		},
 		"alloy_generated": {
 			"hash": "b9b62e3e10ab98f03010e1fe8362c390",
-			"mtime": "2016-12-04T02:02:28.000Z",
+			"mtime": "2016-12-08T14:52:25.000Z",
 			"size": 279
 		},
 		"Default-568h@2x.png": {
@@ -3363,11 +3393,11 @@
 	"gitHash": "1aa3df8",
 	"forceCopy": false,
 	"forceCopyAll": false,
-	"name": "PROJETO_IGARASSU",
+	"name": "Igarassu",
 	"id": "br.com.ribasoft",
 	"analytics": true,
-	"publisher": "not specified",
-	"url": "http://ribasoft.com.br",
+	"publisher": "Ribamar Santos",
+	"url": "http://www.ribasoft.com.br",
 	"version": "1.0",
 	"description": "",
 	"copyright": "not specified",

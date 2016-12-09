@@ -68,9 +68,9 @@
 {
 	switch ((int)styleCache)
 	{
-		case UIPROJETO_IGARASSUNativeItemInfoLight:
-		case UIPROJETO_IGARASSUNativeItemInfoDark:
-		case UIPROJETO_IGARASSUNativeItemDisclosure:
+		case UIIgarassuNativeItemInfoLight:
+		case UIIgarassuNativeItemInfoDark:
+		case UIIgarassuNativeItemDisclosure:
 			return suggestedResizing & ~(UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight);
 		default: {
 			break;

@@ -60,7 +60,7 @@ extern "C" {
 	#define KMETHOD_DEBUG MEMORY_DEBUG
 #endif
 
-// in simulator we redefine to format for PROJETO_IGARASSU Developer console
+// in simulator we redefine to format for Igarassu Developer console
 
 
 #define TI_INLINE static __inline__
@@ -309,13 +309,13 @@ void TiExceptionThrowWithNameAndReason(NSString *exceptionName, NSString *reason
 #define DEFINE_EXCEPTIONS \
 - (void) throwException:(NSString *) reason subreason:(NSString*)subreason location:(NSString *)location\
 {\
-	NSString * exceptionName = [@"org.projeto_igarassu." stringByAppendingString:NSStringFromClass([self class])];\
+	NSString * exceptionName = [@"org.igarassu." stringByAppendingString:NSStringFromClass([self class])];\
 	TiExceptionThrowWithNameAndReason(exceptionName,reason,subreason,location);\
 }\
 \
 + (void) throwException:(NSString *) reason subreason:(NSString*)subreason location:(NSString *)location\
 {\
-	NSString * exceptionName = @"org.projeto_igarassu";\
+	NSString * exceptionName = @"org.igarassu";\
 	TiExceptionThrowWithNameAndReason(exceptionName,reason,subreason,location);\
 }\
 
@@ -426,28 +426,28 @@ DebugLog(@"[WARN] Ti.%@ DEPRECATED in %@, in favor of Ti.%@",api,in,newapi);
 
  //MUST BE NEGATIVE, as it inhabits the same space as UIBarButtonSystemItem
 enum {
-	UIPROJETO_IGARASSUNativeItemNone = -1, 
-	UIPROJETO_IGARASSUNativeItemSpinner = -2,
-	UIPROJETO_IGARASSUNativeItemProgressBar = -3,
+	UIIgarassuNativeItemNone = -1, 
+	UIIgarassuNativeItemSpinner = -2,
+	UIIgarassuNativeItemProgressBar = -3,
 	
-	UIPROJETO_IGARASSUNativeItemSlider = -4,
-	UIPROJETO_IGARASSUNativeItemSwitch = -5,
-	UIPROJETO_IGARASSUNativeItemMultiButton = -6,
-	UIPROJETO_IGARASSUNativeItemSegmented = -7,
+	UIIgarassuNativeItemSlider = -4,
+	UIIgarassuNativeItemSwitch = -5,
+	UIIgarassuNativeItemMultiButton = -6,
+	UIIgarassuNativeItemSegmented = -7,
 	
-	UIPROJETO_IGARASSUNativeItemTextView = -8,
-	UIPROJETO_IGARASSUNativeItemTextField = -9,
-	UIPROJETO_IGARASSUNativeItemSearchBar = -10,
+	UIIgarassuNativeItemTextView = -8,
+	UIIgarassuNativeItemTextField = -9,
+	UIIgarassuNativeItemSearchBar = -10,
 	
-	UIPROJETO_IGARASSUNativeItemPicker = -11,
-	UIPROJETO_IGARASSUNativeItemDatePicker = -12,
+	UIIgarassuNativeItemPicker = -11,
+	UIIgarassuNativeItemDatePicker = -12,
 	
-	UIPROJETO_IGARASSUNativeItemInfoLight = -13,
-	UIPROJETO_IGARASSUNativeItemInfoDark = -14,
+	UIIgarassuNativeItemInfoLight = -13,
+	UIIgarassuNativeItemInfoDark = -14,
 	
-	UIPROJETO_IGARASSUNativeItemDisclosure = -15,
+	UIIgarassuNativeItemDisclosure = -15,
 	
-	UIPROJETO_IGARASSUNativeItemContactAdd = -16
+	UIIgarassuNativeItemContactAdd = -16
 };
 
 
@@ -635,7 +635,7 @@ void incrementKrollCounter();
 void decrementKrollCounter();
 #endif
 /**
- *	TiThreadPerformOnMainThread should replace all PROJETO_IGARASSU instances of
+ *	TiThreadPerformOnMainThread should replace all Igarassu instances of
  *	performSelectorOnMainThread, ESPECIALLY if wait is to be yes. That way,
  *	exceptional-case main thread activities can process them outside of the
  *	standard event loop.

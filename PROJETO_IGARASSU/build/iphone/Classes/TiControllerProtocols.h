@@ -52,7 +52,7 @@
 @end
 
 /**
- Protocol for containment controller. Implemented by UIViewControllers that can host PROJETO_IGARASSU Windows
+ Protocol for containment controller. Implemented by UIViewControllers that can host Igarassu Windows
  */
 @protocol TiControllerContainment <NSObject>
 @required
