@@ -1,9 +1,18 @@
 // Arguments passed into this controller can be accessed via the `$.args` object directly or:
+ // var favoritePlace = $.args;
+ // Ti.API.info(favoritePlace.rowData.id2);
 var args = arguments[0]|| {};
+
 var arg = JSON.stringify(args[0]);
+
 var objplace = JSON.parse(arg);
 
-$.content.title = objplace.place_name;
+if ( OS_IOS ){
+  $.navWindow.title = objplace.place_name;
+}else{
+  $.wincontent.title = objplace.place_name;
+}
+
 
 $.imgPlace.image     = objplace.photo;
 $.lblPhone.text      = objplace.phone;
@@ -20,11 +29,6 @@ if ( lang.indexOf("pt")){
   $.lblDescription.text = objplace.description_eng;
 }
 
-// Ti.API.info(objplace.phone);
-Ti.API.info(Ti.Locale.currentLanguage);
-Ti.API.info(Ti.Locale.currentLocale);
-Ti.API.info(Ti.Locale.currentLocale);
-// Ti.API.info(JSON.parse(Ti.Locale));
 
 function showMap(e){
   try {
@@ -45,4 +49,23 @@ function showMap(e){
   } finally {
 
   }
+}
+
+function favoritePlace(e){
+  if ( !objplace.favorite){
+      objplace.favorite = true;
+      Ti.API.info(objplace.favorite);
+      Alloy.createModel('place', objplace).save();
+      close();
+    }else{
+      alert('Já é um favorito');
+    }
+}
+
+function close() {
+	if (OS_IOS) {
+		$.navWindow.close();
+	} else {
+		$.wincontent.close();
+	}
 }

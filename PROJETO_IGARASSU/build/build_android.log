@@ -1,5 +1,5 @@
 
-2016-12-08 11:57:31
+2016-12-10 14:58:40
 
 Operating System
   Name                        = Mac OS X
@@ -163,6 +163,18 @@ Command
 [INFO]     created:    "Resources/android/alloy/controllers/detailPlace.js"
 [DEBUG]    map:        "build/map/Resources/android/alloy/controllers/detailPlace.js.map"
 [INFO]     created:     "Resources/android/alloy/styles/detailPlace.js"
+[INFO]   [favoritePlace.xml] view processing...
+[INFO]     style:      "favoritePlace.tss"
+[INFO]     view:       "favoritePlace.xml"
+[WARN]   attribute "{id}" missed quot(")!!
+[WARN]   @#[line:5,col:6]
+[INFO]     controller: "favoritePlace.js"
+[TRACE]  - Processing "builtins" module...
+[TRACE]  - Processing "optimizer" module...
+[TRACE]  - Processing "compress" module...
+[INFO]     created:    "Resources/android/alloy/controllers/favoritePlace.js"
+[DEBUG]    map:        "build/map/Resources/android/alloy/controllers/favoritePlace.js.map"
+[INFO]     created:     "Resources/android/alloy/styles/favoritePlace.js"
 [INFO]   [index.xml] view processing...
 [INFO]     style:      "index.tss"
 [INFO]     view:       "index.xml"
@@ -224,9 +236,9 @@ Command
 [TRACE]   
 [TRACE]  Benchmarking
 [TRACE]  ------------
-[TRACE]  [0.8776s] TOTAL
+[TRACE]  [0.93924s] TOTAL
 [INFO]   
-[INFO]   Alloy compiled in 0.8776s
+[INFO]   Alloy compiled in 0.93924s
 [INFO]   Alloy compiler completed successfully
 [INFO]   Launching emulator: Google Nexus 5 - 6.0.0 - API 23 - 1080x1920
 [TRACE]  Starting emulator: Google Nexus 5 - 6.0.0 - API 23 - 1080x1920
@@ -360,14 +372,14 @@ Command
 [DEBUG]  Symlinking /Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/modules/android/ti.map/3.1.0/platform/android/res/drawable-xhdpi/common_signin_btn_icon_disabled_focus_light.9.png => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/res/drawable-xhdpi/common_signin_btn_icon_disabled_focus_light.9.png
 [DEBUG]  Symlinking /Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/modules/android/ti.map/3.1.0/platform/android/res/drawable-xhdpi/common_signin_btn_icon_disabled_light.9.png => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/res/drawable-xhdpi/common_signin_btn_icon_disabled_light.9.png
 [DEBUG]  Symlinking /Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/modules/android/ti.map/3.1.0/platform/android/res/drawable-xhdpi/common_signin_btn_icon_focus_dark.9.png => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/res/drawable-xhdpi/common_signin_btn_icon_focus_dark.9.png
-[TRACE]  Found 1 devices, checking if any of them are the emulator...
-[TRACE]  Emulator is running!
-[TRACE]  Checking if boot animation has finished...
 [DEBUG]  Symlinking /Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/modules/android/ti.map/3.1.0/platform/android/res/drawable-xhdpi/common_signin_btn_icon_focus_light.9.png => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/res/drawable-xhdpi/common_signin_btn_icon_focus_light.9.png
 [DEBUG]  Symlinking /Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/modules/android/ti.map/3.1.0/platform/android/res/drawable-xhdpi/common_signin_btn_icon_normal_dark.9.png => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/res/drawable-xhdpi/common_signin_btn_icon_normal_dark.9.png
 [DEBUG]  Symlinking /Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/modules/android/ti.map/3.1.0/platform/android/res/drawable-xhdpi/common_signin_btn_icon_normal_light.9.png => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/res/drawable-xhdpi/common_signin_btn_icon_normal_light.9.png
 [DEBUG]  Symlinking /Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/modules/android/ti.map/3.1.0/platform/android/res/drawable-xhdpi/common_signin_btn_icon_pressed_dark.9.png => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/res/drawable-xhdpi/common_signin_btn_icon_pressed_dark.9.png
 [DEBUG]  Symlinking /Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/modules/android/ti.map/3.1.0/platform/android/res/drawable-xhdpi/common_signin_btn_icon_pressed_light.9.png => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/res/drawable-xhdpi/common_signin_btn_icon_pressed_light.9.png
+[TRACE]  Found 1 devices, checking if any of them are the emulator...
+[TRACE]  Emulator is running!
+[TRACE]  Checking if boot animation has finished...
 [DEBUG]  Symlinking /Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/modules/android/ti.map/3.1.0/platform/android/res/drawable-xhdpi/common_signin_btn_text_disabled_dark.9.png => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/res/drawable-xhdpi/common_signin_btn_text_disabled_dark.9.png
 [DEBUG]  Symlinking /Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/modules/android/ti.map/3.1.0/platform/android/res/drawable-xhdpi/common_signin_btn_text_disabled_focus_dark.9.png => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/res/drawable-xhdpi/common_signin_btn_text_disabled_focus_dark.9.png
 [DEBUG]  Symlinking /Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/modules/android/ti.map/3.1.0/platform/android/res/drawable-xhdpi/common_signin_btn_text_disabled_focus_light.9.png => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/res/drawable-xhdpi/common_signin_btn_text_disabled_focus_light.9.png
@@ -378,15 +390,15 @@ Command
 [DEBUG]  Symlinking /Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/modules/android/ti.map/3.1.0/platform/android/res/drawable-xhdpi/common_signin_btn_text_normal_light.9.png => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/res/drawable-xhdpi/common_signin_btn_text_normal_light.9.png
 [DEBUG]  Symlinking /Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/modules/android/ti.map/3.1.0/platform/android/res/drawable-xhdpi/common_signin_btn_text_pressed_dark.9.png => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/res/drawable-xhdpi/common_signin_btn_text_pressed_dark.9.png
 [DEBUG]  Symlinking /Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/modules/android/ti.map/3.1.0/platform/android/res/drawable-xhdpi/common_signin_btn_text_pressed_light.9.png => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/res/drawable-xhdpi/common_signin_btn_text_pressed_light.9.png
-[TRACE]  Emulator is booted, emitting booted event
-[INFO]   Emulator is booted
-[INFO]   SD card not required, skipping mount check
-[INFO]   Emulator ready!
 [DEBUG]  Symlinking /Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/modules/android/ti.map/3.1.0/platform/android/res/drawable-xhdpi/ic_plusone_medium_off_client.png => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/res/drawable-xhdpi/ic_plusone_medium_off_client.png
 [DEBUG]  Symlinking /Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/modules/android/ti.map/3.1.0/platform/android/res/drawable-xhdpi/ic_plusone_small_off_client.png => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/res/drawable-xhdpi/ic_plusone_small_off_client.png
 [DEBUG]  Symlinking /Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/modules/android/ti.map/3.1.0/platform/android/res/drawable-xhdpi/ic_plusone_standard_off_client.png => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/res/drawable-xhdpi/ic_plusone_standard_off_client.png
 [DEBUG]  Symlinking /Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/modules/android/ti.map/3.1.0/platform/android/res/drawable-xhdpi/ic_plusone_tall_off_client.png => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/res/drawable-xhdpi/ic_plusone_tall_off_client.png
 [DEBUG]  Symlinking /Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/modules/android/ti.map/3.1.0/platform/android/res/drawable-xhdpi/powered_by_google_dark.png => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/res/drawable-xhdpi/powered_by_google_dark.png
+[TRACE]  Emulator is booted, emitting booted event
+[INFO]   Emulator is booted
+[INFO]   SD card not required, skipping mount check
+[INFO]   Emulator ready!
 [DEBUG]  Symlinking /Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/modules/android/ti.map/3.1.0/platform/android/res/drawable-xhdpi/powered_by_google_light.png => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/res/drawable-xhdpi/powered_by_google_light.png
 [DEBUG]  Symlinking /Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/modules/android/ti.map/3.1.0/platform/android/res/drawable-xxhdpi/cast_ic_notification_0.png => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/res/drawable-xxhdpi/cast_ic_notification_0.png
 [DEBUG]  Symlinking /Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/modules/android/ti.map/3.1.0/platform/android/res/drawable-xxhdpi/cast_ic_notification_1.png => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/res/drawable-xxhdpi/cast_ic_notification_1.png
@@ -527,6 +539,8 @@ Command
 [DEBUG]  Symlinking /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/Resources/android/alloy/controllers/descriptionPlace.js => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/bin/assets/Resources/alloy/controllers/descriptionPlace.js
 [WARN]   Overwriting file /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/bin/assets/Resources/alloy/controllers/detailPlace.js
 [DEBUG]  Symlinking /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/Resources/android/alloy/controllers/detailPlace.js => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/bin/assets/Resources/alloy/controllers/detailPlace.js
+[WARN]   Overwriting file /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/bin/assets/Resources/alloy/controllers/favoritePlace.js
+[DEBUG]  Symlinking /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/Resources/android/alloy/controllers/favoritePlace.js => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/bin/assets/Resources/alloy/controllers/favoritePlace.js
 [WARN]   Overwriting file /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/bin/assets/Resources/alloy/controllers/index.js
 [DEBUG]  Symlinking /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/Resources/android/alloy/controllers/index.js => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/bin/assets/Resources/alloy/controllers/index.js
 [WARN]   Overwriting file /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/bin/assets/Resources/alloy/controllers/listPlace.js
@@ -539,6 +553,8 @@ Command
 [DEBUG]  Symlinking /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/Resources/android/alloy/styles/descriptionPlace.js => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/bin/assets/Resources/alloy/styles/descriptionPlace.js
 [WARN]   Overwriting file /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/bin/assets/Resources/alloy/styles/detailPlace.js
 [DEBUG]  Symlinking /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/Resources/android/alloy/styles/detailPlace.js => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/bin/assets/Resources/alloy/styles/detailPlace.js
+[WARN]   Overwriting file /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/bin/assets/Resources/alloy/styles/favoritePlace.js
+[DEBUG]  Symlinking /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/Resources/android/alloy/styles/favoritePlace.js => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/bin/assets/Resources/alloy/styles/favoritePlace.js
 [WARN]   Overwriting file /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/bin/assets/Resources/alloy/styles/index.js
 [DEBUG]  Symlinking /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/Resources/android/alloy/styles/index.js => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/bin/assets/Resources/alloy/styles/index.js
 [WARN]   Overwriting file /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/bin/assets/Resources/alloy/styles/listPlace.js
@@ -557,6 +573,7 @@ Command
 [DEBUG]  Symlinking /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/Resources/android/alloy/widget.js => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/bin/assets/Resources/alloy/widget.js
 [WARN]   Overwriting file /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/bin/assets/Resources/alloy.js
 [DEBUG]  Symlinking /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/Resources/android/alloy.js => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/bin/assets/Resources/alloy.js
+[WARN]   Overwriting file /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/bin/assets/Resources/ui.js
 [DEBUG]  Symlinking /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/Resources/android/ui.js => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/bin/assets/Resources/ui.js
 [DEBUG]  Adding library /Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/kroll-v8.jar
 [DEBUG]  Adding library /Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/modules/titanium-analytics.jar
@@ -594,39 +611,39 @@ Command
 [DEBUG]  Unknown namespace platform.displaycaps, skipping
 [INFO]   Writing /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/bin/assets/app.json
 [INFO]   Extracting module resources: /Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/modules/titanium-analytics.res.zip
-[DEBUG]  Copying /var/folders/n5/5qb3s2yd5nzc1vtmfg0wdmx80000gn/T/116118-6570-1pt5y8r.h3a4z33di/res/values/strings.xml => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/res/values/strings.xml
+[DEBUG]  Copying /var/folders/n5/5qb3s2yd5nzc1vtmfg0wdmx80000gn/T/1161110-4717-1ihqf6o.r9zp06bt9/res/values/strings.xml => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/res/values/strings.xml
 [INFO]   Extracting module resources: /Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/modules/titanium-android.res.zip
-[DEBUG]  Merging /var/folders/n5/5qb3s2yd5nzc1vtmfg0wdmx80000gn/T/116118-6570-wrveaq.13mzjgu8fr/res/values/strings.xml => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/res/values/strings.xml
+[DEBUG]  Merging /var/folders/n5/5qb3s2yd5nzc1vtmfg0wdmx80000gn/T/1161110-4717-1ry5rse.qp5dqme7b9/res/values/strings.xml => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/res/values/strings.xml
 [INFO]   Extracting module resources: /Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/modules/titanium-filesystem.res.zip
-[DEBUG]  Merging /var/folders/n5/5qb3s2yd5nzc1vtmfg0wdmx80000gn/T/116118-6570-8ae9ef.pz6uzt1emi/res/values/strings.xml => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/res/values/strings.xml
+[DEBUG]  Merging /var/folders/n5/5qb3s2yd5nzc1vtmfg0wdmx80000gn/T/1161110-4717-45d8b1.gx5j7tlnmi/res/values/strings.xml => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/res/values/strings.xml
 [INFO]   Extracting module resources: /Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/modules/titanium-app.res.zip
-[DEBUG]  Merging /var/folders/n5/5qb3s2yd5nzc1vtmfg0wdmx80000gn/T/116118-6570-1iyi05i.9z52ke29/res/values/strings.xml => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/res/values/strings.xml
+[DEBUG]  Merging /var/folders/n5/5qb3s2yd5nzc1vtmfg0wdmx80000gn/T/1161110-4717-ie7wpa.yppjjaif6r/res/values/strings.xml => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/res/values/strings.xml
 [INFO]   Extracting module resources: /Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/modules/titanium-media.res.zip
-[DEBUG]  Merging /var/folders/n5/5qb3s2yd5nzc1vtmfg0wdmx80000gn/T/116118-6570-1x4nyht.f2x401kyb9/res/values/strings.xml => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/res/values/strings.xml
+[DEBUG]  Merging /var/folders/n5/5qb3s2yd5nzc1vtmfg0wdmx80000gn/T/1161110-4717-1g144xh.jnmf5hfr/res/values/strings.xml => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/res/values/strings.xml
 [INFO]   Extracting module resources: /Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/modules/titanium-locale.res.zip
-[DEBUG]  Merging /var/folders/n5/5qb3s2yd5nzc1vtmfg0wdmx80000gn/T/116118-6570-1i4hd7h.vdt5vims4i/res/values/strings.xml => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/res/values/strings.xml
+[DEBUG]  Merging /var/folders/n5/5qb3s2yd5nzc1vtmfg0wdmx80000gn/T/1161110-4717-13tm6zm.wg4t3dte29/res/values/strings.xml => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/res/values/strings.xml
 [INFO]   Extracting module resources: /Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/modules/titanium-network.res.zip
-[DEBUG]  Merging /var/folders/n5/5qb3s2yd5nzc1vtmfg0wdmx80000gn/T/116118-6570-19y2e6b.2otfx647vi/res/values/strings.xml => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/res/values/strings.xml
+[DEBUG]  Merging /var/folders/n5/5qb3s2yd5nzc1vtmfg0wdmx80000gn/T/1161110-4717-1xnryoe.pk9usg7gb9/res/values/strings.xml => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/res/values/strings.xml
 [INFO]   Extracting module resources: /Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/modules/titanium-xml.res.zip
-[DEBUG]  Merging /var/folders/n5/5qb3s2yd5nzc1vtmfg0wdmx80000gn/T/116118-6570-6ltequ.ln4xab57b9/res/values/strings.xml => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/res/values/strings.xml
+[DEBUG]  Merging /var/folders/n5/5qb3s2yd5nzc1vtmfg0wdmx80000gn/T/1161110-4717-15i9pxj.g3sypsyvi/res/values/strings.xml => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/res/values/strings.xml
 [INFO]   Extracting module resources: /Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/modules/titanium-utils.res.zip
-[DEBUG]  Merging /var/folders/n5/5qb3s2yd5nzc1vtmfg0wdmx80000gn/T/116118-6570-1gbcuz4.9h1bawcdi/res/values/strings.xml => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/res/values/strings.xml
+[DEBUG]  Merging /var/folders/n5/5qb3s2yd5nzc1vtmfg0wdmx80000gn/T/1161110-4717-5kuyn9.mc4nf2bj4i/res/values/strings.xml => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/res/values/strings.xml
 [INFO]   Extracting module resources: /Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/modules/titanium-geolocation.res.zip
-[DEBUG]  Merging /var/folders/n5/5qb3s2yd5nzc1vtmfg0wdmx80000gn/T/116118-6570-1brmaq3.dlxzd50zfr/res/values/strings.xml => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/res/values/strings.xml
+[DEBUG]  Merging /var/folders/n5/5qb3s2yd5nzc1vtmfg0wdmx80000gn/T/1161110-4717-1smu7pq.50ee3fpqfr/res/values/strings.xml => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/res/values/strings.xml
 [INFO]   Extracting module resources: /Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/modules/titanium-accelerometer.res.zip
-[DEBUG]  Merging /var/folders/n5/5qb3s2yd5nzc1vtmfg0wdmx80000gn/T/116118-6570-si1qlq.g8laii19k9/res/values/strings.xml => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/res/values/strings.xml
+[DEBUG]  Merging /var/folders/n5/5qb3s2yd5nzc1vtmfg0wdmx80000gn/T/1161110-4717-1yx1b3f.iymh0ejyvi/res/values/strings.xml => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/res/values/strings.xml
 [INFO]   Extracting module resources: /Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/modules/titanium-contacts.res.zip
-[DEBUG]  Merging /var/folders/n5/5qb3s2yd5nzc1vtmfg0wdmx80000gn/T/116118-6570-1hazzeq.9xtq8semi/res/values/strings.xml => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/res/values/strings.xml
+[DEBUG]  Merging /var/folders/n5/5qb3s2yd5nzc1vtmfg0wdmx80000gn/T/1161110-4717-nfm2yz.jtkcmzpvi/res/values/strings.xml => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/res/values/strings.xml
 [INFO]   Extracting module resources: /Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/modules/titanium-map.res.zip
-[DEBUG]  Merging /var/folders/n5/5qb3s2yd5nzc1vtmfg0wdmx80000gn/T/116118-6570-qstv5k.ujmlr9hpvi/res/values/strings.xml => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/res/values/strings.xml
+[DEBUG]  Merging /var/folders/n5/5qb3s2yd5nzc1vtmfg0wdmx80000gn/T/1161110-4717-1ywitsj.hd2mhiwwmi/res/values/strings.xml => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/res/values/strings.xml
 [INFO]   Extracting module resources: /Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/modules/titanium-calendar.res.zip
-[DEBUG]  Merging /var/folders/n5/5qb3s2yd5nzc1vtmfg0wdmx80000gn/T/116118-6570-1gbqm9y.2zqoos9k9/res/values/strings.xml => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/res/values/strings.xml
+[DEBUG]  Merging /var/folders/n5/5qb3s2yd5nzc1vtmfg0wdmx80000gn/T/1161110-4717-uvv3vv.0i6tsdobt9/res/values/strings.xml => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/res/values/strings.xml
 [INFO]   Extracting module resources: /Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/modules/titanium-gesture.res.zip
-[DEBUG]  Merging /var/folders/n5/5qb3s2yd5nzc1vtmfg0wdmx80000gn/T/116118-6570-1mcu2ap.r4vj4kuik9/res/values/strings.xml => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/res/values/strings.xml
+[DEBUG]  Merging /var/folders/n5/5qb3s2yd5nzc1vtmfg0wdmx80000gn/T/1161110-4717-1ehzplx.pbybfenrk9/res/values/strings.xml => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/res/values/strings.xml
 [INFO]   Extracting module resources: /Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/modules/titanium-platform.res.zip
-[DEBUG]  Merging /var/folders/n5/5qb3s2yd5nzc1vtmfg0wdmx80000gn/T/116118-6570-pxm986.pkt162yb9/res/values/strings.xml => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/res/values/strings.xml
+[DEBUG]  Merging /var/folders/n5/5qb3s2yd5nzc1vtmfg0wdmx80000gn/T/1161110-4717-1dhnhs3.y7nscq5mi/res/values/strings.xml => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/res/values/strings.xml
 [INFO]   Extracting module resources: /Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/modules/titanium-database.res.zip
-[DEBUG]  Merging /var/folders/n5/5qb3s2yd5nzc1vtmfg0wdmx80000gn/T/116118-6570-13buk1z.ss1ktbuik9/res/values/strings.xml => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/res/values/strings.xml
+[DEBUG]  Merging /var/folders/n5/5qb3s2yd5nzc1vtmfg0wdmx80000gn/T/1161110-4717-75vyo1.2i731k0529/res/values/strings.xml => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/res/values/strings.xml
 [DEBUG]  Removing old file: /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/.classpath
 [DEBUG]  Removing old file: /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/.gitignore
 [DEBUG]  Removing old file: /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/.project
@@ -649,7 +666,7 @@ Command
 [DEBUG]  Merging en strings => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/res/values/strings.xml
 [DEBUG]  Writing pt-BR strings => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/res/values-pt-rBR/strings.xml
 [INFO]   Generating /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/res/values/theme.xml
-[INFO]   Packaging application: /Users/ribamarmjs/Library/Android/sdk/build-tools/23.0.3/aapt "package" "-f" "-m" "-J" "/Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/gen" "-M" "/Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/AndroidManifest.xml" "-A" "/Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/bin/assets" "-S" "/Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/res" "-I" "/Users/ribamarmjs/Library/Android/sdk/platforms/android-23/android.jar" "-F" "/Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/bin/app.ap_" "--auto-add-overlay" "--extra-packages" "ti.modules.titanium.ui:android.support.v7.appcompat:android.support.v7.cardview" "-S" "/var/folders/n5/5qb3s2yd5nzc1vtmfg0wdmx80000gn/T/116118-6570-1p44mky.otuwz8h0k9/res" "-S" "/var/folders/n5/5qb3s2yd5nzc1vtmfg0wdmx80000gn/T/116118-6570-1mmc6be.4seqeyiudi/res" "-S" "/var/folders/n5/5qb3s2yd5nzc1vtmfg0wdmx80000gn/T/116118-6570-j1qucs.eb7eovfgvi/res"
+[INFO]   Packaging application: /Users/ribamarmjs/Library/Android/sdk/build-tools/23.0.3/aapt "package" "-f" "-m" "-J" "/Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/gen" "-M" "/Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/AndroidManifest.xml" "-A" "/Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/bin/assets" "-S" "/Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/res" "-I" "/Users/ribamarmjs/Library/Android/sdk/platforms/android-23/android.jar" "-F" "/Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/bin/app.ap_" "--auto-add-overlay" "--extra-packages" "ti.modules.titanium.ui:android.support.v7.appcompat:android.support.v7.cardview" "-S" "/var/folders/n5/5qb3s2yd5nzc1vtmfg0wdmx80000gn/T/1161110-4717-xnk0rv.ksu06vquxr/res" "-S" "/var/folders/n5/5qb3s2yd5nzc1vtmfg0wdmx80000gn/T/1161110-4717-1jmyh3o.6umwijm7vi/res" "-S" "/var/folders/n5/5qb3s2yd5nzc1vtmfg0wdmx80000gn/T/1161110-4717-cl9lx5.1aiwt2csor/res"
 [INFO]   Building Java source files: /Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/bin/javac "-J-Xmx1024M" "-encoding" "utf8" "-bootclasspath" "/Users/ribamarmjs/Library/Android/sdk/platforms/android-23/android.jar:/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/kroll-v8.jar:/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/modules/titanium-analytics.jar:/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/aps-analytics.jar:/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/modules/titanium-android.jar:/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/jaxen-1.1.1.jar:/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/ti-commons-codec-1.3.jar:/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/kroll-common.jar:/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/titanium.jar:/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/android-support-multidex.jar:/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/modules/titanium-filesystem.jar:/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/modules/titanium-app.jar:/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/modules/titanium-ui.jar:/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/nineoldandroids-appc-2.4.0.jar:/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/modules/titanium-media.jar:/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/modules/titanium-appcompat.jar:/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/android-support-v4.jar:/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/android-support-v7-appcompat.jar:/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/modules/titanium-cardview.jar:/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/cardview-v7-23.0.1.jar:/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/modules/titanium-locale.jar:/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/modules/titanium-network.jar:/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/modules/titanium-xml.jar:/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/modules/titanium-utils.jar:/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/modules/titanium-geolocation.jar:/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/modules/titanium-accelerometer.jar:/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/modules/titanium-contacts.jar:/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/modules/titanium-map.jar:/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/modules/titanium-calendar.jar:/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/modules/titanium-gesture.jar:/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/modules/titanium-platform.jar:/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/modules/titanium-database.jar:/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/modules/android/ti.map/3.1.0/map.jar:/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/modules/android/ti.map/3.1.0/lib/google-play-services-base.jar:/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/modules/android/ti.map/3.1.0/lib/google-play-services-map.jar:/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/kroll-apt.jar:/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/lib/titanium-verify.jar:Manifest.class:R.class:IgarassuActivity.class:IgarassuAppInfo.class:IgarassuApplication.class" "-d" "/Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/bin/classes" "-proc:none" "-target" "1.6" "-source" "1.6" "@/Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/java-sources.txt"
 [INFO]   Running dexer: /Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/bin/java "-Xmx1024M" "-XX:-UseGCOverheadLimit" "-Djava.ext.dirs=/Users/ribamarmjs/Library/Android/sdk/platform-tools" "-jar" "/Users/ribamarmjs/Library/Android/sdk/build-tools/23.0.3/lib/dx.jar" "--dex" "--multi-dex" "--output=/Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/bin/dexfiles" "/Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/android/bin/classes" "/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/lib/titanium-verify.jar" "/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/modules/android/ti.map/3.1.0/map.jar" "/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/modules/android/ti.map/3.1.0/lib/google-play-services-base.jar" "/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/modules/android/ti.map/3.1.0/lib/google-play-services-map.jar" "/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/kroll-v8.jar" "/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/modules/titanium-analytics.jar" "/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/aps-analytics.jar" "/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/modules/titanium-android.jar" "/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/jaxen-1.1.1.jar" "/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/ti-commons-codec-1.3.jar" "/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/kroll-common.jar" "/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/titanium.jar" "/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/android-support-multidex.jar" "/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/modules/titanium-filesystem.jar" "/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/modules/titanium-app.jar" "/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/modules/titanium-ui.jar" "/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/nineoldandroids-appc-2.4.0.jar" "/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/modules/titanium-media.jar" "/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/modules/titanium-appcompat.jar" "/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/android-support-v4.jar" "/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/android-support-v7-appcompat.jar" "/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/modules/titanium-cardview.jar" "/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/cardview-v7-23.0.1.jar" "/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/modules/titanium-locale.jar" "/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/modules/titanium-network.jar" "/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/modules/titanium-xml.jar" "/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/modules/titanium-utils.jar" "/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/modules/titanium-geolocation.jar" "/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/modules/titanium-accelerometer.jar" "/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/modules/titanium-contacts.jar" "/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/modules/titanium-map.jar" "/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/modules/titanium-calendar.jar" "/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/modules/titanium-gesture.jar" "/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/modules/titanium-platform.jar" "/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/android/modules/titanium-database.jar"
 [INFO]   Creating unsigned apk
@@ -663,12 +680,14 @@ Command
 [DEBUG]  Deflating assets/Resources/alloy/controllers/BaseController.js
 [DEBUG]  Deflating assets/Resources/alloy/controllers/descriptionPlace.js
 [DEBUG]  Deflating assets/Resources/alloy/controllers/detailPlace.js
+[DEBUG]  Deflating assets/Resources/alloy/controllers/favoritePlace.js
 [DEBUG]  Deflating assets/Resources/alloy/controllers/index.js
 [DEBUG]  Deflating assets/Resources/alloy/controllers/listPlace.js
 [DEBUG]  Deflating assets/Resources/alloy/controllers/mapPlace.js
 [DEBUG]  Deflating assets/Resources/alloy/models/Place.js
 [DEBUG]  Deflating assets/Resources/alloy/styles/descriptionPlace.js
 [DEBUG]  Deflating assets/Resources/alloy/styles/detailPlace.js
+[DEBUG]  Deflating assets/Resources/alloy/styles/favoritePlace.js
 [DEBUG]  Deflating assets/Resources/alloy/styles/index.js
 [DEBUG]  Deflating assets/Resources/alloy/styles/listPlace.js
 [DEBUG]  Deflating assets/Resources/alloy/styles/mapPlace.js
@@ -1251,95 +1270,5 @@ Command
 [INFO]   App successfully installed
 [INFO]   Starting app: br.com.ribasoft/.IgarassuActivity
 [DEBUG]  Trying to start the app...
-[INFO]   Application pid: 2257
--- Start application log -----------------------------------------------------
-[INFO]   I/        (  102): debuggerd: Mar 24 2016 11:19:18
-[INFO]   E/vinput-seamless(  311): found seamless mouse device
-[INFO]   E/        (  309): Failed to connect to host (UnixStream)!!!
-[INFO]   E/        (  309): Failed to connect to host (UnixStream)!!!
-[INFO]   E/android.os.Debug(  109): failed to load memtrack module: -2
-[INFO]   I/Radio-JNI(  109): register_android_hardware_Radio DONE
-[INFO]   E/        (  463): batterystats service unavailable!
-[INFO]   E/        (  463): batterystats service unavailable!
-[INFO]   E/        (  463): batterystats service unavailable!
-[INFO]   E/        (  463): batterystats service unavailable!
-[INFO]   E/android.os.Debug(  464): failed to load memtrack module: -2
-[INFO]   I/Radio-JNI(  464): register_android_hardware_Radio DONE
-[INFO]   D/        (  792): HostConnection::get() New Host Connection established 0xf70521c0, tid 792
-[INFO]   D/        (  803): HostConnection::get() New Host Connection established 0xf630a0f0, tid 806
-[INFO]   D/        (  792): HostConnection::get() New Host Connection established 0xf6d0a0e0, tid 793
-[INFO]   I/APM::ConfigParsingUtils(  463): loadAudioPolicyConfig() loaded /system/etc/audio_policy.conf
-[INFO]   D/        (  792): HostConnection::get() New Host Connection established 0xf7052e90, tid 795
-[INFO]   D/        (  769): HostConnection::get() New Host Connection established 0xde2bb1d0, tid 848
-[INFO]   D/        (  792): HostConnection::get() New Host Connection established 0xf7052b80, tid 807
-[INFO]   E/WifiNative-HAL(  769): Could not start hal
-[INFO]   D/WifiNative-HAL(  769): Setting external_sim to 1
-[INFO]   D/WifiNative-HAL(  769): Failing getSupportedFeatureset because HAL isn't started
-[INFO]   I/vol.Events(  885): writeEvent collection_started
-[INFO]   I/vol.Events(  885): writeEvent external_ringer_mode_changed normal
-[INFO]   I/vol.Events(  885): writeEvent internal_ringer_mode_changed normal
-[INFO]   I/vol.Events(  885): writeEvent level_changed STREAM_ALARM 6
-[INFO]   I/vol.Events(  885): writeEvent level_changed STREAM_BLUETOOTH_SCO 7
-[INFO]   I/vol.Events(  885): writeEvent level_changed STREAM_MUSIC 11
-[INFO]   I/vol.Events(  885): writeEvent level_changed STREAM_RING 5
-[INFO]   I/vol.Events(  885): writeEvent level_changed STREAM_SYSTEM 5
-[INFO]   I/vol.Events(  885): writeEvent level_changed STREAM_VOICE_CALL 4
-[INFO]   I/LatinIME:LogUtils( 1101): Dictionary info: dictionary = contacts.pt_BR ; version = 1481203360 ; date = ?
-[INFO]   D/Launcher.Model( 1146): Old launcher provider: content://com.android.launcher2.settings/favorites?notify=true
-[INFO]   D/Launcher.Model( 1146): Old launcher provider does not exist.
-[INFO]   D/        (  769): HostConnection::get() New Host Connection established 0xd97be120, tid 769
-[INFO]   D/        (  885): HostConnection::get() New Host Connection established 0xf2ce1d70, tid 885
-[INFO]   E/DcSwitchStateMachine-0( 1131): DctController is not ready
-[INFO]   D/        ( 1146): HostConnection::get() New Host Connection established 0xf2c827b0, tid 1146
-[INFO]   I/LatinIME:LogUtils( 1101): Dictionary info: dictionary = userunigram.pt_BR ; version = 1481203360 ; date = ?
-[INFO]   D/        (  885): HostConnection::get() New Host Connection established 0xe0189860, tid 1274
-[INFO]   I/LatinIME:LogUtils( 1101): Dictionary info: dictionary = UserHistoryDictionary.pt_BR ; version = 1481203360 ; date = ?
-[INFO]   D/        ( 1146): HostConnection::get() New Host Connection established 0xeea12990, tid 1316
-[INFO]   I/LatinIME:LogUtils( 1101): Dictionary info: dictionary = main:pt_br ; version = 54 ; date = 1414726257
-[INFO]   D/        (  792): HostConnection::get() New Host Connection established 0xf6d0a200, tid 1380
-[INFO]   E/DcSwitchStateMachine-0( 1131): EVENT_DATA_DISALLOWED failed, com.android.internal.telephony.CommandException: REQUEST_NOT_SUPPORTED
-[INFO]   E/DcSwitchStateMachine-0( 1131): EVENT_DATA_DISALLOWED failed, com.android.internal.telephony.CommandException: REQUEST_NOT_SUPPORTED
-[INFO]   E/DcSwitchStateMachine-0( 1131): EVENT_DATA_DISALLOWED failed, com.android.internal.telephony.CommandException: REQUEST_NOT_SUPPORTED
-[INFO]   D/        (  769): HostConnection::get() New Host Connection established 0xde2bbe00, tid 788
-[INFO]   D/ConnectivityManager.CallbackHandler(  885): CM callback handler got msg 524290
-[INFO]   D/ConnectivityManager.CallbackHandler(  885): CM callback handler got msg 524289
-[INFO]   D/NetworkMonitor/NetworkAgentInfo [WIFI () - 100](  769): Checking http://connectivitycheck.gstatic.com/generate_204 on "WiredSSID", connectivitycheck.gstatic.com=216.58.202.142,2800:3f0:4001:801::200e
-[INFO]   D/NetworkMonitor/NetworkAgentInfo [WIFI () - 100](  769): isCaptivePortal: ret=204 headers={null=[HTTP/1.1 204 No Content], Content-Length=[0], Date=[Thu, 08 Dec 2016 13:22:54 GMT], X-Android-Received-Millis=[1481203374462], X-Android-Response-Source=[NETWORK 204], X-Android-Selected-Protocol=[http/1.1], X-Android-Sent-Millis=[1481203374391]}
-[INFO]   D/ConnectivityManager.CallbackHandler(  885): CM callback handler got msg 524294
-[INFO]   I/check-archive.sh( 1683): File to check: /sdcard/Download/gapps-lp-20141109-signed.zip
-[INFO]   I/check-archive.sh( 1686): /sdcard/Download: content of directory:
-[INFO]   I/check-archive.sh( 1687): total 168288
-[INFO]   I/check-archive.sh( 1687): -rw-rw---- root     sdcard_rw  9390250 2016-12-08 07:45 Genymotion-ARM-Translation_v1.1.zip
-[INFO]   I/check-archive.sh( 1687): -rw-rw---- root     sdcard_rw 162927577 2016-12-08 07:54 gapps-lp-20141109-signed.zip
-[INFO]   I/check-archive.sh( 1688): /sdcard/Download/gapps-lp-20141109-signed.zip: this file seems to be a zip archive
-[INFO]   I/check-archive.sh( 1695): [check-archive.sh] update-binary found in /sdcard/Download/gapps-lp-20141109-signed.zip; return 0
-[INFO]   I/flash-archive.sh( 1702): /sdcard/Download/gapps-lp-20141109-signed.zip seems to be a zip archive
-[INFO]   I/flash-archive.sh( 1704): [flash_archive] Creating tmp dir
-[INFO]   I/flash-archive.sh( 1708): [flash_archive] Unzip archive
-[INFO]   I/flash-archive.sh( 1710): [flash_archive] Remount /system/ in rw
-[INFO]   I/flash-archive.sh( 1712): [flash_archive] Start file install
-[INFO]   I/flash-archive.sh( 1717): [ERROR][flash_archive] META-INF/com/google/android/update-binary is an ARM binary, using system updater
-[INFO]   I/flash-archive.sh( 1724): [sanitize_zipfile_and_execute_update_binary] Repackaging system/lib/libfilterpack_facedetect.so ARM lib
-[INFO]   E/android.os.Debug( 1813): failed to load memtrack module: -2
-[INFO]   I/Radio-JNI( 1813): register_android_hardware_Radio DONE
-[INFO]   I/PackageManager.DexOptimizer(  769): Running dexopt (dex2oat) on: /data/app/vmdl1674273613.tmp/base.apk pkg=br.com.ribasoft isa=x86 vmSafeMode=false debuggable=false oatDir = /data/app/vmdl1674273613.tmp/oat
-[INFO]   E/android.os.Debug( 1860): failed to load memtrack module: -2
-[INFO]   I/Radio-JNI( 1860): register_android_hardware_Radio DONE
-[INFO]   D/        ( 1905): HostConnection::get() New Host Connection established 0xee1bcf00, tid 1905
-[INFO]   D/        ( 1905): HostConnection::get() New Host Connection established 0xdec4e140, tid 1929
-[INFO]   E/android.os.Debug( 2208): failed to load memtrack module: -2
-[INFO]   I/Radio-JNI( 2208): register_android_hardware_Radio DONE
-[INFO]   I/PackageManager.DexOptimizer(  769): Running dexopt (dex2oat) on: /data/app/vmdl695301060.tmp/base.apk pkg=br.com.ribasoft isa=x86 vmSafeMode=false debuggable=false oatDir = /data/app/vmdl695301060.tmp/oat
-[INFO]   E/android.os.Debug( 2239): failed to load memtrack module: -2
-[INFO]   I/Radio-JNI( 2239): register_android_hardware_Radio DONE
-[INFO]   TiApplication: (main) [0,0] checkpoint, app created.
-[INFO]   TiApplication: (main) [16,16] Titanium 6.0.0 (2016/11/13 01:23 undefined)
-[INFO]   MultiDex: VM with version 2.1.0 has multidex support
-[INFO]   MultiDex: install
-[INFO]   MultiDex: VM has multidex support, MultiDex support library is disabled.
-[INFO]   TiApplication: (main) [11,27] Titanium Javascript runtime: v8
-[INFO]   TiRootActivity: (main) [0,0] checkpoint, on root activity create, savedInstanceState: null
-[WARN]   V8Object: (KrollRuntimeThread) [75,75] Runtime disposed, cannot set property 'userAgent'
-[INFO]   TiRootActivity: (main) [0,0] checkpoint, on root activity resume. activity = br.com.ribasoft.IgarassuActivity@ede4fb6
-[DEBUG]  OpenGLRenderer: Use EGL_SWAP_BEHAVIOR_PRESERVED: true
-[INFO]   Project built successfully in 28s 704ms
+[INFO]   Application pid: 6700
+[INFO]   Project built successfully in 28s 782ms

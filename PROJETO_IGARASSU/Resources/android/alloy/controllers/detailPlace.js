@@ -87,11 +87,7 @@ function Controller() {
             id: e.rowData.identificador
         });
         var ctrl = Alloy.createController("descriptionPlace", objplace);
-        try {
-            ctrl.getView().open();
-        } catch (e) {
-            Ti.API.info(e.message);
-        } finally {}
+        ctrl.getView().open();
     }
     require("alloy/controllers/BaseController").apply(this, Array.prototype.slice.call(arguments));
     this.__controllerPath = "detailPlace";
@@ -130,6 +126,7 @@ function Controller() {
     };
     _.extend($, $.__views);
     var row = $.args;
+    $.windowDetail.title = row.title;
     var xhr = Ti.Network.createHTTPClient();
     xhr.onerror = function(e) {
         alert(e);
@@ -139,7 +136,6 @@ function Controller() {
     };
     xhr.open("GET", "http://igarassu-project.herokuapp.com/place");
     xhr.send();
-    $.windowDetail.title = row.title;
     __defers["$.__views.tableViewDetailPlace!click!showMoreDetailPlace"] && $.addListener($.__views.tableViewDetailPlace, "click", showMoreDetailPlace);
     _.extend($, exports);
 }

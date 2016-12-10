@@ -1,0 +1,20 @@
+<Alloy>
+	<NavigationWindow module ="ui">
+		<Window id="wincontent">
+			<TableView onClick="showdetailPlace" dataCollection ="places">
+					<TableViewRow id="viewRow" identificador="{alloy_id}" id2={id}>
+							<View id="viewDetailPlace">
+									<ImageView id="imgphotoPlace" image="{photo}" />
+								<View id="viewInfoDetailPlace">
+										<Label id="lblPlaceName" text="{place_name}" class="lblTitle"/>
+										<Label id="lblPlacePhone" text="{phone}" class="lblSubTitle" autoLink="Ti.UI.AUTOLINK_PHONE_NUMBERS"  />
+								</View>
+								<View id="viewDetailPlaceButtons">
+									<ImageView id="imgbtnMap"/>
+								</View>
+							</View>
+					</TableViewRow>
+			</TableView>
+		</Window>
+</NavigationWindow>
+</Alloy>

@@ -1,21 +1,23 @@
 <Alloy>
-	<Window id="content">
-		<ScrollView id="scrollView" showVerticalScrollIndicator="true" showHorizontalScrollIndicator="true">
+	<NavigationWindow id="navWindow" module="ui">
+		<Window id="wincontent">
+			<ScrollView id="scrollView" showVerticalScrollIndicator="true" showHorizontalScrollIndicator="true">
 
-			<View id="viewDescription">
+				<View id="viewDescription">
 
-			<ImageView id="imgPlace" />
-			<View id="viewBtn">
-				<ImageView id="btnFavorite" />
-				<ImageView id="btnMap" onClick="showMap" />
+				<ImageView id="imgPlace" />
+				<View id="viewBtn">
+					<ImageView id="btnFavorite" onClick="favoritePlace" />
+					<ImageView id="btnMap" onClick="showMap" />
+				</View>
+				<Label id="lblAddress" />
+				<Label id="lblPrice" />
+				<Label id="lblPhone" />
+				<Label id="lblDescription" />
+
 			</View>
-			<Label id="lblAddress" />
-			<Label id="lblPrice" />
-			<Label id="lblPhone" />
-			<Label id="lblDescription" />
+		</ScrollView>
 
-		</View>
-	</ScrollView>
-
-	</Window>
+		</Window>
+	</NavigationWindow>
 </Alloy>

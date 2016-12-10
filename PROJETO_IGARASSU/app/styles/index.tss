@@ -79,7 +79,7 @@
 	image: "/information.png"
 }
 
-"#imgBookMark": {
+"#imgFavorite": {
 	image: "/bookmark.png"
 }
 

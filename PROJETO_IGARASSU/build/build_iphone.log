@@ -1,5 +1,5 @@
 
-2016-12-08 11:52:24
+2016-12-10 11:15:52
 
 Operating System
   Name                        = Mac OS X
@@ -60,8 +60,7 @@ Command
 [INFO]   Found Titanium plugin id=ti.alloy version=1.0 
 [TRACE]  Snapshotting build directory
 [DEBUG]  Checking if log server port 45360 is available
-[DEBUG]  Log server port 45360 is in use, testing if it's the app we're building
-[DEBUG]  The log server port is being used by the app being built, continuing
+[DEBUG]  Log server port 45360 is available
 [DEBUG]  Titanium SDK iOS directory: /Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/iphone
 [INFO]   Deploy type: development
 [INFO]   Building for target: simulator
@@ -231,9 +230,9 @@ Command
 [TRACE]   
 [TRACE]  Benchmarking
 [TRACE]  ------------
-[TRACE]  [1.00616s] TOTAL
+[TRACE]  [0.89638s] TOTAL
 [INFO]   
-[INFO]   Alloy compiled in 1.00616s
+[INFO]   Alloy compiled in 0.89638s
 [INFO]   Alloy compiler completed successfully
 [INFO]   Creating Xcode project
 [TRACE]  Removing pre-compile phase
@@ -348,14 +347,17 @@ Command
 [INFO]   Removing files
 [DEBUG]  Removing empty directories
 [INFO]   Skipping xcodebuild
-[INFO]   Finished building the application in 2s 952ms
+[INFO]   Finished building the application in 2s 665ms
 [INFO]   Launching iOS Simulator
 [TRACE]  [ioslib] Selected iOS Simulator: iPhone 7 Plus
 [TRACE]  [ioslib]   UDID    = 5CB180AF-73EF-4B29-9995-A852108E3EF2
 [TRACE]  [ioslib]   iOS     = 10.1
 [TRACE]  [ioslib] Autoselected Xcode: 8.1
-[TRACE]  [ioslib] iPhone 7 Plus Simulator already running with the correct udid
 [TRACE]  [ioslib] Tailing iPhone 7 Plus Simulator system log: /Users/ribamarmjs/Library/Logs/CoreSimulator/5CB180AF-73EF-4B29-9995-A852108E3EF2/system.log
+[TRACE]  [ioslib] Running: /Applications/Xcode.app/Contents/Developer/usr/bin/simctl shutdown 5CB180AF-73EF-4B29-9995-A852108E3EF2
+[TRACE]  [ioslib] iPhone 7 Plus Simulator was already shutdown
+[TRACE]  [ioslib] Running: /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app/Contents/MacOS/Simulator -CurrentDeviceUDID 5CB180AF-73EF-4B29-9995-A852108E3EF2
+[TRACE]  [ioslib] iPhone 7 Plus Simulator started
 [TRACE]  [ioslib] Running: osascript "/Users/ribamarmjs/Library/Application Support/Titanium/mobilesdk/osx/6.0.0.GA/node_modules/ioslib/lib/sim_focus.scpt" "Simulator"
 [TRACE]  [ioslib] iPhone 7 Plus Simulator successfully focused
 [TRACE]  [ioslib] Running: /Applications/Xcode.app/Contents/Developer/usr/bin/simctl install 5CB180AF-73EF-4B29-9995-A852108E3EF2 /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/iphone/build/Products/Debug-iphonesimulator/Igarassu.app

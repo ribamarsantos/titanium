@@ -13,7 +13,8 @@ exports.definition = {
 			"phone"   				: "text",
 			"photo"						: "text",
 			"placelat"				: "real",
-			"placelong" 			: "real"
+			"placelong" 			: "real",
+			"favorite"        : "boolean"
 		},
 		adapter: {
 			type: "sql",

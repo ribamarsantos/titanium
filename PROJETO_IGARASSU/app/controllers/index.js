@@ -30,3 +30,7 @@ xhr.onload = getTemperatureInfo;
 xhr.onerror = function (e) {
   alert(e);
 };
+
+function showFavoritePlace(e){
+  Alloy.createController('favoritePlace').getView().open();
+}

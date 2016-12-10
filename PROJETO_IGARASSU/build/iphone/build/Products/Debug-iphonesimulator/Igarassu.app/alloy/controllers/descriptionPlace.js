@@ -21,6 +21,7 @@ function Controller() {
             alert(e2.message);
         } finally {}
     }
+    function favoritePlace() {}
     require("alloy/controllers/BaseController").apply(this, Array.prototype.slice.call(arguments));
     this.__controllerPath = "descriptionPlace";
     this.args = arguments[0] || {};
@@ -87,6 +88,7 @@ function Controller() {
         id: "btnFavorite"
     });
     $.__views.viewBtn.add($.__views.btnFavorite);
+    favoritePlace ? $.addListener($.__views.btnFavorite, "click", favoritePlace) : __defers["$.__views.btnFavorite!click!favoritePlace"] = true;
     $.__views.btnMap = Ti.UI.createImageView({
         textAlign: Ti.UI.TEXT_ALIGNMENT_RIGHT,
         width: 45,
@@ -133,9 +135,7 @@ function Controller() {
     $.lblPrice.text = objplace.price;
     var lang = Ti.Locale.currentLanguage;
     $.lblDescription.text = lang.indexOf("pt") ? objplace.description_pt : lang.indexOf("es") ? objplace.description_esp : objplace.description_eng;
-    Ti.API.info(Ti.Locale.currentLanguage);
-    Ti.API.info(Ti.Locale.currentLocale);
-    Ti.API.info(Ti.Locale.currentLocale);
+    __defers["$.__views.btnFavorite!click!favoritePlace"] && $.addListener($.__views.btnFavorite, "click", favoritePlace);
     __defers["$.__views.btnMap!click!showMap"] && $.addListener($.__views.btnMap, "click", showMap);
     _.extend($, exports);
 }

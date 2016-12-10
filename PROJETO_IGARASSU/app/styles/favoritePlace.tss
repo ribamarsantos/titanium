@@ -1,0 +1,60 @@
+
+"#imgphotoPlace": {
+  height:56,
+  width:'20%',
+  left:5,
+  top:5,
+  bottom: 5
+
+}
+"#viewDetailPlace": {
+  layout: "horizontal",
+  width: Ti.UI.FILL,
+  height: Ti.UI.SIZE
+
+}
+
+"#viewInfoDetailPlace": {
+  left: 8,
+  height:Ti.UI.SIZE,
+  width: '60%',
+  layout:"vertical"
+}
+
+
+"Label":{
+	top:5,
+  left:5
+}
+
+"#viewDetailPlaceButtons": {
+  left: 5,
+  width: '10%'
+}
+
+
+"#imgbtnMap": {
+  width: '50%',
+  height: Ti.UI.SIZE,
+  image: "/location.png"
+}
+
+
+".lblSubTitle": {
+  font: {
+    fontSize: 12,
+    fontStyle: "italic"
+  }
+}
+
+".lblTitle": {
+  font: {
+    fontSize: 18
+  }
+}
+
+"#wincontent": {
+  height: Ti.UI.FILL,
+  width: Ti.UI.FILL,
+  backgroundColor: "orange"
+}
