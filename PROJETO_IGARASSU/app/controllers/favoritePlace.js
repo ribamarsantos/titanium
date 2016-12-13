@@ -3,10 +3,6 @@ var args = $.args;
 
 Alloy.Collections.places.fetch();
 
-
-// function filterFavorite(collection) {
-//   return collection.where({favorite:"false"});
-// }
 function showdetailPlace(e){
   var objplace = Alloy.Collections.places.get(e.rowData.identificador);
   objplace.isFavorite = true;

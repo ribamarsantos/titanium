@@ -1,13 +1,15 @@
 // OBJECTS
-var xhr = Ti.Network.createHTTPClient();
 var link = "http://api.openweathermap.org/data/2.5/weather?id=3398352&appid=68988c96250c1d2068f922c26a917810&units=metric&lang=pt";
-
-// FUNCTIONS
-function showListPlace(e){
-  Alloy.createController('listPlace').
-      getView().
-      open();
-}
+var xhr = Ti.Network.createHTTPClient(
+  {
+    onload: getTemperatureInfo,
+    onerror: function (e) {
+      Ti.API.debug(e.message);
+      //alert(e);
+    },
+    timeout: 5000
+  }
+);
 
 function getTemperatureInfo() {
     var temperature = JSON.parse(this.responseText);
@@ -18,19 +20,29 @@ function getTemperatureInfo() {
     }
 }
 
-// EVENTS
+// MENU Options click
 
-$.index.open();
+// LIST PLACE
+function showListPlace(e){
+  Alloy.createController('listPlace').
+      getView().
+      open();
+}
 
-xhr.open('GET', link);
-xhr.send();
-
-xhr.onload = getTemperatureInfo;
-
-xhr.onerror = function (e) {
-  alert(e);
-};
-
+// FAVORITE PLACE
 function showFavoritePlace(e){
   Alloy.createController('favoritePlace').getView().open();
+}
+
+$.index.open();
+$.index.addEventListener('focus',callTemperature);
+
+function callTemperature(e){
+  if ( Ti.Network.online){
+    Ti.API.info('teste');
+    xhr.open('GET', link);
+    xhr.send();
+  }else{
+    Ti.API.info('Sem internet!');
+  }
 }

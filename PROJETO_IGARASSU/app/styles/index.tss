@@ -1,14 +1,12 @@
 "#header": {
 	layout: "horizontal",
 	height: Ti.UI.SIZE,
-	backgroundColor: "white"
+	backgroundColor: "#006600"
 }
 
 ".imgviewmenu": {
 	width: 96,
 	height: 96,
-	//image: "http://www.motorpress.com.br/static/images/uploads/ecosport_titanium_08_940x532.jpg",
-	//image: "https://igarassu-project.herokuapp.com/imagens/bope_paintball.jpg",
 	top: 10,
 	left: 10,
 	right: 10,
@@ -22,7 +20,7 @@
 }
 "#lblCityName": {
 	text: L('city_name'),
-	font: { fontSize:36 }
+	font: { fontSize:36}
 }
 
 "#lblTemperature": {
@@ -34,23 +32,30 @@
 "#viewMenu": {
 	width: Ti.UI.FILL,
 	height: Ti.UI.FILL,
-	layout: "vertical"
+	layout: "vertical",
+	backgroundColor: "#CCFFCC"
 }
 "#viewColumn01":{
 	layout: "horizontal",
-	height: Ti.UI.SIZE
+	height: Ti.UI.SIZE,
+	width: Ti.UI.FILL,
+	bottom: 30,
+	top: 30
 }
 "#viewColumn02":{
 	layout: "horizontal",
-	height: Ti.UI.SIZE
+	height: Ti.UI.SIZE,
+	width: Ti.UI.FILL,
+	left: 50
 }
 
 ".lblMenuItem": {
 	font: {
-		fontSize: 16,
-		fontFamily: "Helvetica"	,
+		fontSize: 20,
+		fontFamily: "Helvetica",
 		fontWeight: "bold"
-	}
+	},
+	color:"#000C66"
 }
 
 
@@ -88,5 +93,8 @@
 }
 "Label":{
 
-	color: "blue"
+	color: "white",
+	font:{
+	 				fontFamily: "Helvetica"
+				}
 }

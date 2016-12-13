@@ -3,8 +3,6 @@ var args = $.args;
 
 var height_row = 50;
 
-
-
 var activities =[];
 var activities =[
   {title: L('diversao'),
@@ -39,11 +37,9 @@ var activities =[
 $.tableViewListPlaces.data = activities;
 
 function showDetails(e){
-
   Alloy.createController('detailPlace',e.rowData)
                                           .getView()
                                           .open();
-
 }
 
 function closeWindow(e){

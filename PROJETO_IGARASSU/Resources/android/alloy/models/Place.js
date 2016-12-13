@@ -16,7 +16,7 @@ exports.definition = {
             photo: "text",
             placelat: "real",
             placelong: "real",
-            favorite: "boolean"
+            favorite: "integer"
         },
         adapter: {
             type: "sql",

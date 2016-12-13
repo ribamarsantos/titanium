@@ -32,6 +32,10 @@ function Controller() {
         id: "__alloyId28"
     });
     $.__views.tableViewListPlaces = Ti.UI.createTableView({
+        backgroundColor: "#000C66",
+        rows: {
+            color: "#000C66"
+        },
         id: "tableViewListPlaces"
     });
     $.__views.__alloyId28.add($.__views.tableViewListPlaces);

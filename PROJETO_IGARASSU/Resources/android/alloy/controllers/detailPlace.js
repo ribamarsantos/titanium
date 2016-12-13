@@ -77,6 +77,13 @@ function Controller() {
         }
         $.__views.tableViewDetailPlace.setData(rows);
     }
+    function callPlace() {
+        if (Ti.Network.online) {
+            Ti.API.info("teste");
+            xhr.open("GET", "http://igarassu-project.herokuapp.com/place");
+            xhr.send();
+        } else Ti.API.info("Sem internet!");
+    }
     function filterPlace(collection) {
         return collection.where({
             place_type: row.id
@@ -86,8 +93,7 @@ function Controller() {
         var objplace = Alloy.Collections.places.where({
             id: e.rowData.identificador
         });
-        var ctrl = Alloy.createController("descriptionPlace", objplace);
-        ctrl.getView().open();
+        Alloy.createController("descriptionPlace", objplace).getView().open();
     }
     require("alloy/controllers/BaseController").apply(this, Array.prototype.slice.call(arguments));
     this.__controllerPath = "detailPlace";
@@ -126,16 +132,17 @@ function Controller() {
     };
     _.extend($, $.__views);
     var row = $.args;
+    var xhr = Ti.Network.createHTTPClient({
+        onload: function() {
+            Alloy.Collections.places.reset(JSON.parse(this.responseText));
+        },
+        onerror: function(e) {
+            Ti.API.debug(e.message);
+        },
+        timeout: 5e3
+    });
     $.windowDetail.title = row.title;
-    var xhr = Ti.Network.createHTTPClient();
-    xhr.onerror = function(e) {
-        alert(e);
-    };
-    xhr.onload = function() {
-        Alloy.Collections.places.reset(JSON.parse(this.responseText));
-    };
-    xhr.open("GET", "http://igarassu-project.herokuapp.com/place");
-    xhr.send();
+    $.windowDetail.addEventListener("open", callPlace);
     __defers["$.__views.tableViewDetailPlace!click!showMoreDetailPlace"] && $.addListener($.__views.tableViewDetailPlace, "click", showMoreDetailPlace);
     _.extend($, exports);
 }

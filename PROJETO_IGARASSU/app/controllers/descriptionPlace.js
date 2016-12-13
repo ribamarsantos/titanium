@@ -21,9 +21,9 @@ $.lblPrice.text      = objplace.price;
 
 var lang = Ti.Locale.currentLanguage;
 
-if ( lang.indexOf("pt")){
+if ( lang.indexOf("pt-")){
   $.lblDescription.text = objplace.description_pt;
-}else if (lang.indexOf("es")) {
+}else if (lang.indexOf("es-")) {
   $.lblDescription.text = objplace.description_esp;
 }else{
   $.lblDescription.text = objplace.description_eng;

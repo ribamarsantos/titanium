@@ -3,7 +3,7 @@ exports.definition = {
 		columns:{
 			"id"              : "integer",
 			"place_type"      : "integer",
-			"place_name" 						: "text",
+			"place_name" 			: "text",
 			"description_pt"	: "text",
 			"description_eng"	: "text",
 			"description_esp"	: "text",
@@ -14,7 +14,7 @@ exports.definition = {
 			"photo"						: "text",
 			"placelat"				: "real",
 			"placelong" 			: "real",
-			"favorite"        : "boolean"
+			"favorite"        : "integer"
 		},
 		adapter: {
 			type: "sql",

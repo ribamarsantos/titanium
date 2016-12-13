@@ -8,9 +8,6 @@ function __processArg(obj, key) {
 }
 
 function Controller() {
-    function showListPlace() {
-        Alloy.createController("listPlace").getView().open();
-    }
     function getTemperatureInfo() {
         var temperature = JSON.parse(this.responseText);
         if (200 == temperature.cod) {
@@ -18,8 +15,18 @@ function Controller() {
             $.lblTemperature.text = temperature.main.temp + "º";
         }
     }
+    function showListPlace() {
+        Alloy.createController("listPlace").getView().open();
+    }
     function showFavoritePlace() {
         Alloy.createController("favoritePlace").getView().open();
+    }
+    function callTemperature() {
+        if (Ti.Network.online) {
+            Ti.API.info("teste");
+            xhr.open("GET", link);
+            xhr.send();
+        } else Ti.API.info("Sem internet!");
     }
     require("alloy/controllers/BaseController").apply(this, Array.prototype.slice.call(arguments));
     this.__controllerPath = "index";
@@ -45,16 +52,17 @@ function Controller() {
     $.__views.header = Ti.UI.createView({
         layout: "horizontal",
         height: Ti.UI.SIZE,
-        backgroundColor: "white",
+        backgroundColor: "#006600",
         id: "header"
     });
     $.__views.__alloyId23.add($.__views.header);
     $.__views.lblCityName = Ti.UI.createLabel({
-        color: "blue",
-        text: L("city_name"),
+        color: "white",
         font: {
+            fontFamily: "Helvetica",
             fontSize: 36
         },
+        text: L("city_name"),
         id: "lblCityName"
     });
     $.__views.header.add($.__views.lblCityName);
@@ -67,12 +75,13 @@ function Controller() {
     });
     $.__views.header.add($.__views.imgviewTemperature);
     $.__views.lblTemperature = Ti.UI.createLabel({
-        color: "blue",
-        textAlign: Ti.UI.TEXT_ALIGNMENT_RIGHT,
-        text: "31º",
+        color: "white",
         font: {
+            fontFamily: "Helvetica",
             fontSize: 14
         },
+        textAlign: Ti.UI.TEXT_ALIGNMENT_RIGHT,
+        text: "31º",
         id: "lblTemperature"
     });
     $.__views.header.add($.__views.lblTemperature);
@@ -80,22 +89,25 @@ function Controller() {
         width: Ti.UI.FILL,
         height: Ti.UI.FILL,
         layout: "vertical",
+        backgroundColor: "#CCFFCC",
         id: "viewMenu",
-        backgroundColor: "white",
         center: true
     });
     $.__views.__alloyId23.add($.__views.viewMenu);
     $.__views.viewColumn01 = Ti.UI.createView({
         layout: "horizontal",
         height: Ti.UI.SIZE,
-        id: "viewColumn01",
-        backgroundColor: "white"
+        width: Ti.UI.FILL,
+        bottom: 30,
+        top: 30,
+        id: "viewColumn01"
     });
     $.__views.viewMenu.add($.__views.viewColumn01);
     $.__views.__alloyId24 = Ti.UI.createView({
         layout: "vertical",
         height: Ti.UI.SIZE,
         width: Ti.UI.SIZE,
+        left: 50,
         id: "__alloyId24"
     });
     $.__views.viewColumn01.add($.__views.__alloyId24);
@@ -112,10 +124,10 @@ function Controller() {
     $.__views.__alloyId24.add($.__views.imgWhatToDo);
     showListPlace ? $.addListener($.__views.imgWhatToDo, "click", showListPlace) : __defers["$.__views.imgWhatToDo!click!showListPlace"] = true;
     $.__views.lblWhatToDo = Ti.UI.createLabel({
-        color: "blue",
+        color: "#000C66",
         font: {
-            fontSize: 16,
             fontFamily: "Helvetica",
+            fontSize: 20,
             fontWeight: "bold"
         },
         text: L("lbl_whattodo"),
@@ -143,10 +155,10 @@ function Controller() {
     $.__views.__alloyId25.add($.__views.imgFavorite);
     showFavoritePlace ? $.addListener($.__views.imgFavorite, "click", showFavoritePlace) : __defers["$.__views.imgFavorite!click!showFavoritePlace"] = true;
     $.__views.lblFavorite = Ti.UI.createLabel({
-        color: "blue",
+        color: "#000C66",
         font: {
-            fontSize: 16,
             fontFamily: "Helvetica",
+            fontSize: 20,
             fontWeight: "bold"
         },
         text: L("lbl_favorite"),
@@ -157,8 +169,9 @@ function Controller() {
     $.__views.viewColumn02 = Ti.UI.createView({
         layout: "horizontal",
         height: Ti.UI.SIZE,
-        id: "viewColumn02",
-        backgroundColor: "white"
+        width: Ti.UI.FILL,
+        left: 50,
+        id: "viewColumn02"
     });
     $.__views.viewMenu.add($.__views.viewColumn02);
     $.__views.__alloyId26 = Ti.UI.createView({
@@ -180,10 +193,10 @@ function Controller() {
     });
     $.__views.__alloyId26.add($.__views.imgInformation);
     $.__views.lblInformation = Ti.UI.createLabel({
-        color: "blue",
+        color: "#000C66",
         font: {
-            fontSize: 16,
             fontFamily: "Helvetica",
+            fontSize: 20,
             fontWeight: "bold"
         },
         text: L("lbl_information"),
@@ -209,10 +222,10 @@ function Controller() {
     });
     $.__views.__alloyId27.add($.__views.imgEvent);
     $.__views.lblEvent = Ti.UI.createLabel({
-        color: "blue",
+        color: "#000C66",
         font: {
-            fontSize: 16,
             fontFamily: "Helvetica",
+            fontSize: 20,
             fontWeight: "bold"
         },
         text: L("lbl_event"),
@@ -226,15 +239,16 @@ function Controller() {
     $.__views.index && $.addTopLevelView($.__views.index);
     exports.destroy = function() {};
     _.extend($, $.__views);
-    var xhr = Ti.Network.createHTTPClient();
     var link = "http://api.openweathermap.org/data/2.5/weather?id=3398352&appid=68988c96250c1d2068f922c26a917810&units=metric&lang=pt";
+    var xhr = Ti.Network.createHTTPClient({
+        onload: getTemperatureInfo,
+        onerror: function(e) {
+            Ti.API.debug(e.message);
+        },
+        timeout: 5e3
+    });
     $.index.open();
-    xhr.open("GET", link);
-    xhr.send();
-    xhr.onload = getTemperatureInfo;
-    xhr.onerror = function(e) {
-        alert(e);
-    };
+    $.index.addEventListener("focus", callTemperature);
     __defers["$.__views.imgWhatToDo!click!showListPlace"] && $.addListener($.__views.imgWhatToDo, "click", showListPlace);
     __defers["$.__views.lblWhatToDo!click!showListPlace"] && $.addListener($.__views.lblWhatToDo, "click", showListPlace);
     __defers["$.__views.imgFavorite!click!showFavoritePlace"] && $.addListener($.__views.imgFavorite, "click", showFavoritePlace);

@@ -8,9 +8,9 @@
 				<Label id="lblTemperature"></Label>
 			</View>
 
-			<ScrollView id="viewMenu" backgroundColor="white" center="true">
-				<View id="viewColumn01"  backgroundColor="white">
-					<View  layout="vertical" height="Ti.UI.SIZE" width="Ti.UI.SIZE">
+			<ScrollView id="viewMenu"  center="true">
+				<View id="viewColumn01">
+					<View  layout="vertical" height="Ti.UI.SIZE" width="Ti.UI.SIZE" left="50">
 						<ImageView id="imgWhatToDo" class="imgviewmenu" onClick="showListPlace" />
 						<Label id="lblWhatToDo" class="lblMenuItem" onClick="showListPlace"/>
 					</View>
@@ -21,7 +21,7 @@
 					</View>
 				</View>
 
-				<View id="viewColumn02" backgroundColor="white">
+				<View id="viewColumn02">
 					<View layout="vertical" height="Ti.UI.SIZE" width="Ti.UI.SIZE">
 						<ImageView id="imgInformation"  class="imgviewmenu" />
 						<Label id="lblInformation" class="lblMenuItem"/>

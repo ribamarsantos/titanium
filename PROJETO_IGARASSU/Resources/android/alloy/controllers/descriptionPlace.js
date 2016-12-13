@@ -134,8 +134,6 @@ function Controller() {
     $.__views.navWindow && $.addTopLevelView($.__views.navWindow);
     exports.destroy = function() {};
     _.extend($, $.__views);
-    var favoritePlace = $.args;
-    Ti.API.info(favoritePlace.rowData.id2);
     var args = arguments[0] || {};
     var arg = JSON.stringify(args[0]);
     var objplace = JSON.parse(arg);
@@ -145,7 +143,7 @@ function Controller() {
     $.lblAddress.text = objplace.address + " - " + objplace.district;
     $.lblPrice.text = objplace.price;
     var lang = Ti.Locale.currentLanguage;
-    $.lblDescription.text = lang.indexOf("pt") ? objplace.description_pt : lang.indexOf("es") ? objplace.description_esp : objplace.description_eng;
+    $.lblDescription.text = lang.indexOf("pt-") ? objplace.description_pt : lang.indexOf("es-") ? objplace.description_esp : objplace.description_eng;
     __defers["$.__views.btnFavorite!click!favoritePlace"] && $.addListener($.__views.btnFavorite, "click", favoritePlace);
     __defers["$.__views.btnMap!click!showMap"] && $.addListener($.__views.btnMap, "click", showMap);
     _.extend($, exports);
