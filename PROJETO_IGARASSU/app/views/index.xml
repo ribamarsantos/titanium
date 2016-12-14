@@ -23,7 +23,7 @@
 
 				<View id="viewColumn02">
 					<View layout="vertical" height="Ti.UI.SIZE" width="Ti.UI.SIZE">
-						<ImageView id="imgInformation"  class="imgviewmenu" />
+						<ImageView id="imgInformation"  class="imgviewmenu" onClick="showInfo" />
 						<Label id="lblInformation" class="lblMenuItem"/>
 					</View>
 					<View layout="vertical" height="Ti.UI.SIZE" width="Ti.UI.SIZE">

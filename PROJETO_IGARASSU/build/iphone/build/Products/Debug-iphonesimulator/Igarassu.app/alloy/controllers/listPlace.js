@@ -31,22 +31,26 @@ function Controller() {
     var $ = this;
     var exports = {};
     var __defers = {};
-    $.__views.__alloyId16 = Ti.UI.createWindow({
-        id: "__alloyId16"
+    $.__views.__alloyId28 = Ti.UI.createWindow({
+        id: "__alloyId28"
     });
     $.__views.btnBack = Ti.UI.createButton({
         systemButton: Ti.UI.iOS.SystemButton.REPLY,
         id: "btnBack"
     });
     closeWindow ? $.addListener($.__views.btnBack, "click", closeWindow) : __defers["$.__views.btnBack!click!closeWindow"] = true;
-    $.__views.__alloyId16.leftNavButton = $.__views.btnBack;
+    $.__views.__alloyId28.leftNavButton = $.__views.btnBack;
     $.__views.tableViewListPlaces = Ti.UI.createTableView({
+        backgroundColor: "#000C66",
+        rows: {
+            color: "#000C66"
+        },
         id: "tableViewListPlaces"
     });
-    $.__views.__alloyId16.add($.__views.tableViewListPlaces);
+    $.__views.__alloyId28.add($.__views.tableViewListPlaces);
     showDetails ? $.addListener($.__views.tableViewListPlaces, "click", showDetails) : __defers["$.__views.tableViewListPlaces!click!showDetails"] = true;
     $.__views.listPlaceWin = (require("ui").createNavigationWindow || Ti.UI.iOS.createNavigationWindow)({
-        window: $.__views.__alloyId16,
+        window: $.__views.__alloyId28,
         id: "listPlaceWin"
     });
     $.__views.listPlaceWin && $.addTopLevelView($.__views.listPlaceWin);

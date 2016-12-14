@@ -1,0 +1,12 @@
+<Alloy>
+	<NavigationWindow module ="ui" id="listInfoPlaceWin">
+		<Window>
+			<LeftNavButton platform="ios">
+				<Button id="btnBack" onClick="closeWindow"/>
+			</LeftNavButton>
+			<TableView>
+				<TableViewRow top="20" title="Hino" onClick="showDetails"/>
+			</TableView>
+		</Window>
+	</NavigationWindow>
+</Alloy>

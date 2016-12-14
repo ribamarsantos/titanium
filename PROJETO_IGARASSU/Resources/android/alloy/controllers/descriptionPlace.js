@@ -17,12 +17,18 @@ function Controller() {
         } finally {}
     }
     function favoritePlace() {
-        if (objplace.favorite) alert("Já é um favorito"); else {
-            objplace.favorite = true;
+        if (1 != objplace.favorite) {
+            objplace.favorite = 1;
             Ti.API.info(objplace.favorite);
-            Alloy.createModel("place", objplace).save();
-            close();
-        }
+            var placeFav = JSON.stringify(Alloy.Collections.places.where({
+                id: objplace.id
+            }));
+            Ti.API.info(placeFav.place_name);
+            if (placeFav.id) alert("ja e um favorito"); else {
+                Alloy.createModel("place", objplace).save();
+                close();
+            }
+        } else alert("Já é um favorito");
     }
     function close() {
         $.wincontent.close();
@@ -135,13 +141,15 @@ function Controller() {
     exports.destroy = function() {};
     _.extend($, $.__views);
     var args = arguments[0] || {};
-    var arg = JSON.stringify(args[0]);
+    var arg = [];
+    arg = JSON.stringify(args[0]);
     var objplace = JSON.parse(arg);
     $.wincontent.title = objplace.place_name;
     $.imgPlace.image = objplace.photo;
     $.lblPhone.text = objplace.phone;
     $.lblAddress.text = objplace.address + " - " + objplace.district;
     $.lblPrice.text = objplace.price;
+    $.btnFavorite.visible = 1 != objplace.favorite;
     var lang = Ti.Locale.currentLanguage;
     $.lblDescription.text = lang.indexOf("pt-") ? objplace.description_pt : lang.indexOf("es-") ? objplace.description_esp : objplace.description_eng;
     __defers["$.__views.btnFavorite!click!favoritePlace"] && $.addListener($.__views.btnFavorite, "click", favoritePlace);

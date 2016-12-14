@@ -1,0 +1,46 @@
+<Alloy>
+	<NavigationWindow module ="ui" id="hinoPlaceWin">
+		<Window layout="vertical">
+			<LeftNavButton platform="ios">
+				<Button id="btnBack" onClick="closeWindow"/>
+			</LeftNavButton>
+			<View layout="horizontal" height="Ti.UI.SIZE">
+			<Button top="20" onClick="play" image="/play.png" width="Ti.UI.SIZE" right="20" />
+			<Button top="20" onClick="pause" image="/pause.png" width="Ti.UI.SIZE"/>
+			</View>
+			<ProgressBar top="10" id="progress" width="250" color="orange"></ProgressBar>
+			<ScrollView height="Ti.UI.SIZE" width="Ti.UI.FILL">
+			<TextArea editable="false" borderWidth="2" borderRadius="5" top="20" width="Ti.UI.FILL" height="Ti.UI.SIZE" value="
+				Coqueirais farfalhando ao vento
+				Sob a brisa amena do mar,
+				No horizonte a náu majestosa
+				Motivou o nativo a gritar:
+				Igarassu! que na sua linguagem
+				Quer dizer grande embarcação,
+				Que trazia Duarte Coelho
+				O herói da colonização
+
+				Refrão:
+
+
+				Igarassu! Igarassu!
+
+				Foi o brado do guerreiro varonil,
+
+				Igarassu! Igarassu! (bis)
+
+
+				És o marco da História do Brasil
+				Pernambuco nasceu em teu solo
+				E o nordeste daqui se expandiu,
+				Brava grei se acalenta em teu colo,
+				Que a muitos heróis já serviu,
+				Relicário de um nobre passado
+				Conservado com veneração
+				Pelos teus padroeiros amados,
+				Os santos queridos: Cosme e Damião.">
+			</TextArea>
+		</ScrollView>
+		</Window>
+	</NavigationWindow>
+</Alloy>

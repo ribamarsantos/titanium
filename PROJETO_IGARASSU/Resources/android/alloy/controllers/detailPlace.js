@@ -8,10 +8,10 @@ function __processArg(obj, key) {
 }
 
 function Controller() {
-    function __alloyId10(e) {
+    function __alloyId8(e) {
         if (e && e.fromAdapter) return;
-        __alloyId10.opts || {};
-        var models = filterPlace(__alloyId9);
+        __alloyId8.opts || {};
+        var models = filterPlace(__alloyId7);
         var len = models.length;
         var rows = [];
         for (var i = 0; len > i; i++) {
@@ -63,23 +63,11 @@ function Controller() {
                 autoLink: Ti.UI.AUTOLINK_PHONE_NUMBERS
             });
             __alloyId4.add(__alloyId6);
-            var __alloyId7 = Ti.UI.createView({
-                left: 5,
-                width: "10%"
-            });
-            __alloyId2.add(__alloyId7);
-            var __alloyId8 = Ti.UI.createImageView({
-                width: "50%",
-                height: Ti.UI.SIZE,
-                image: "/location.png"
-            });
-            __alloyId7.add(__alloyId8);
         }
         $.__views.tableViewDetailPlace.setData(rows);
     }
     function callPlace() {
         if (Ti.Network.online) {
-            Ti.API.info("teste");
             xhr.open("GET", "http://igarassu-project.herokuapp.com/place");
             xhr.send();
         } else Ti.API.info("Sem internet!");
@@ -94,6 +82,9 @@ function Controller() {
             id: e.rowData.identificador
         });
         Alloy.createController("descriptionPlace", objplace).getView().open();
+    }
+    function removeFavorite() {
+        Ti.API.info("long click");
     }
     require("alloy/controllers/BaseController").apply(this, Array.prototype.slice.call(arguments));
     this.__controllerPath = "detailPlace";
@@ -119,16 +110,17 @@ function Controller() {
         id: "tableViewDetailPlace"
     });
     $.__views.windowDetail.add($.__views.tableViewDetailPlace);
-    var __alloyId9 = Alloy.Collections["places"] || places;
-    __alloyId9.on("fetch destroy change add remove reset", __alloyId10);
+    var __alloyId7 = Alloy.Collections["places"] || places;
+    __alloyId7.on("fetch destroy change add remove reset", __alloyId8);
     showMoreDetailPlace ? $.addListener($.__views.tableViewDetailPlace, "click", showMoreDetailPlace) : __defers["$.__views.tableViewDetailPlace!click!showMoreDetailPlace"] = true;
+    removeFavorite ? $.addListener($.__views.tableViewDetailPlace, "longclick", removeFavorite) : __defers["$.__views.tableViewDetailPlace!longclick!removeFavorite"] = true;
     $.__views.detailPlace = (require("ui").createNavigationWindow || Ti.UI.iOS.createNavigationWindow)({
         window: $.__views.windowDetail,
         id: "detailPlace"
     });
     $.__views.detailPlace && $.addTopLevelView($.__views.detailPlace);
     exports.destroy = function() {
-        __alloyId9 && __alloyId9.off("fetch destroy change add remove reset", __alloyId10);
+        __alloyId7 && __alloyId7.off("fetch destroy change add remove reset", __alloyId8);
     };
     _.extend($, $.__views);
     var row = $.args;
@@ -144,6 +136,7 @@ function Controller() {
     $.windowDetail.title = row.title;
     $.windowDetail.addEventListener("open", callPlace);
     __defers["$.__views.tableViewDetailPlace!click!showMoreDetailPlace"] && $.addListener($.__views.tableViewDetailPlace, "click", showMoreDetailPlace);
+    __defers["$.__views.tableViewDetailPlace!longclick!removeFavorite"] && $.addListener($.__views.tableViewDetailPlace, "longclick", removeFavorite);
     _.extend($, exports);
 }
 

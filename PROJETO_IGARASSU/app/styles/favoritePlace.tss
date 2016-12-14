@@ -33,11 +33,6 @@
 }
 
 
-"#imgbtnMap": {
-  width: '50%',
-  height: Ti.UI.SIZE,
-  image: "/location.png"
-}
 
 
 ".lblSubTitle": {

@@ -21,7 +21,17 @@ function Controller() {
             alert(e2.message);
         } finally {}
     }
-    function favoritePlace() {}
+    function favoritePlace() {
+        if (objplace.favorite) alert("Já é um favorito"); else {
+            objplace.favorite = true;
+            Ti.API.info(objplace.favorite);
+            Alloy.createModel("place", objplace).save();
+            close();
+        }
+    }
+    function close() {
+        $.navWindow.close();
+    }
     require("alloy/controllers/BaseController").apply(this, Array.prototype.slice.call(arguments));
     this.__controllerPath = "descriptionPlace";
     this.args = arguments[0] || {};
@@ -39,10 +49,9 @@ function Controller() {
     var $ = this;
     var exports = {};
     var __defers = {};
-    $.__views.content = Ti.UI.createWindow({
-        id: "content"
+    $.__views.wincontent = Ti.UI.createWindow({
+        id: "wincontent"
     });
-    $.__views.content && $.addTopLevelView($.__views.content);
     $.__views.scrollView = Ti.UI.createScrollView({
         layout: "vertical",
         height: Ti.UI.FILL,
@@ -51,7 +60,7 @@ function Controller() {
         showVerticalScrollIndicator: true,
         showHorizontalScrollIndicator: true
     });
-    $.__views.content.add($.__views.scrollView);
+    $.__views.wincontent.add($.__views.scrollView);
     $.__views.viewDescription = Ti.UI.createView({
         layout: "vertical",
         width: Ti.UI.FILL,
@@ -123,18 +132,23 @@ function Controller() {
         id: "lblDescription"
     });
     $.__views.viewDescription.add($.__views.lblDescription);
+    $.__views.navWindow = (require("ui").createNavigationWindow || Ti.UI.iOS.createNavigationWindow)({
+        window: $.__views.wincontent,
+        id: "navWindow"
+    });
+    $.__views.navWindow && $.addTopLevelView($.__views.navWindow);
     exports.destroy = function() {};
     _.extend($, $.__views);
     var args = arguments[0] || {};
     var arg = JSON.stringify(args[0]);
     var objplace = JSON.parse(arg);
-    $.content.title = objplace.place_name;
+    $.navWindow.title = objplace.place_name;
     $.imgPlace.image = objplace.photo;
     $.lblPhone.text = objplace.phone;
     $.lblAddress.text = objplace.address + " - " + objplace.district;
     $.lblPrice.text = objplace.price;
     var lang = Ti.Locale.currentLanguage;
-    $.lblDescription.text = lang.indexOf("pt") ? objplace.description_pt : lang.indexOf("es") ? objplace.description_esp : objplace.description_eng;
+    $.lblDescription.text = lang.indexOf("pt-") ? objplace.description_pt : lang.indexOf("es-") ? objplace.description_esp : objplace.description_eng;
     __defers["$.__views.btnFavorite!click!favoritePlace"] && $.addListener($.__views.btnFavorite, "click", favoritePlace);
     __defers["$.__views.btnMap!click!showMap"] && $.addListener($.__views.btnMap, "click", showMap);
     _.extend($, exports);

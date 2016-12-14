@@ -1,5 +1,5 @@
 
-2016-12-10 11:15:52
+2016-12-13 00:04:27
 
 Operating System
   Name                        = Mac OS X
@@ -169,6 +169,18 @@ Command
 [INFO]     created:    "Resources/iphone/alloy/controllers/detailPlace.js"
 [DEBUG]    map:        "build/map/Resources/iphone/alloy/controllers/detailPlace.js.map"
 [INFO]     created:     "Resources/iphone/alloy/styles/detailPlace.js"
+[INFO]   [favoritePlace.xml] view processing...
+[INFO]     style:      "favoritePlace.tss"
+[INFO]     view:       "favoritePlace.xml"
+[WARN]   attribute "{id}" missed quot(")!!
+[WARN]   @#[line:5,col:6]
+[INFO]     controller: "favoritePlace.js"
+[TRACE]  - Processing "builtins" module...
+[TRACE]  - Processing "optimizer" module...
+[TRACE]  - Processing "compress" module...
+[INFO]     created:    "Resources/iphone/alloy/controllers/favoritePlace.js"
+[DEBUG]    map:        "build/map/Resources/iphone/alloy/controllers/favoritePlace.js.map"
+[INFO]     created:     "Resources/iphone/alloy/styles/favoritePlace.js"
 [INFO]   [index.xml] view processing...
 [INFO]     style:      "index.tss"
 [INFO]     view:       "index.xml"
@@ -230,9 +242,9 @@ Command
 [TRACE]   
 [TRACE]  Benchmarking
 [TRACE]  ------------
-[TRACE]  [0.89638s] TOTAL
+[TRACE]  [0.95847s] TOTAL
 [INFO]   
-[INFO]   Alloy compiled in 0.89638s
+[INFO]   Alloy compiled in 0.95847s
 [INFO]   Alloy compiler completed successfully
 [INFO]   Creating Xcode project
 [TRACE]  Removing pre-compile phase
@@ -312,12 +324,14 @@ Command
 [DEBUG]  Overwriting /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/Resources/iphone/alloy/controllers/BaseController.js => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/iphone/build/Products/Debug-iphonesimulator/Igarassu.app/alloy/controllers/BaseController.js
 [DEBUG]  Overwriting /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/Resources/iphone/alloy/controllers/descriptionPlace.js => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/iphone/build/Products/Debug-iphonesimulator/Igarassu.app/alloy/controllers/descriptionPlace.js
 [DEBUG]  Overwriting /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/Resources/iphone/alloy/controllers/detailPlace.js => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/iphone/build/Products/Debug-iphonesimulator/Igarassu.app/alloy/controllers/detailPlace.js
+[DEBUG]  Overwriting /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/Resources/iphone/alloy/controllers/favoritePlace.js => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/iphone/build/Products/Debug-iphonesimulator/Igarassu.app/alloy/controllers/favoritePlace.js
 [DEBUG]  Overwriting /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/Resources/iphone/alloy/controllers/index.js => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/iphone/build/Products/Debug-iphonesimulator/Igarassu.app/alloy/controllers/index.js
 [DEBUG]  Overwriting /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/Resources/iphone/alloy/controllers/listPlace.js => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/iphone/build/Products/Debug-iphonesimulator/Igarassu.app/alloy/controllers/listPlace.js
 [DEBUG]  Overwriting /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/Resources/iphone/alloy/controllers/mapPlace.js => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/iphone/build/Products/Debug-iphonesimulator/Igarassu.app/alloy/controllers/mapPlace.js
 [DEBUG]  Overwriting /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/Resources/iphone/alloy/models/Place.js => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/iphone/build/Products/Debug-iphonesimulator/Igarassu.app/alloy/models/Place.js
 [DEBUG]  Overwriting /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/Resources/iphone/alloy/styles/descriptionPlace.js => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/iphone/build/Products/Debug-iphonesimulator/Igarassu.app/alloy/styles/descriptionPlace.js
 [DEBUG]  Overwriting /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/Resources/iphone/alloy/styles/detailPlace.js => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/iphone/build/Products/Debug-iphonesimulator/Igarassu.app/alloy/styles/detailPlace.js
+[DEBUG]  Overwriting /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/Resources/iphone/alloy/styles/favoritePlace.js => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/iphone/build/Products/Debug-iphonesimulator/Igarassu.app/alloy/styles/favoritePlace.js
 [DEBUG]  Overwriting /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/Resources/iphone/alloy/styles/index.js => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/iphone/build/Products/Debug-iphonesimulator/Igarassu.app/alloy/styles/index.js
 [DEBUG]  Overwriting /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/Resources/iphone/alloy/styles/listPlace.js => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/iphone/build/Products/Debug-iphonesimulator/Igarassu.app/alloy/styles/listPlace.js
 [DEBUG]  Overwriting /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/Resources/iphone/alloy/styles/mapPlace.js => /Users/ribamarmjs/version-control/titanium/PROJETO_IGARASSU/build/iphone/build/Products/Debug-iphonesimulator/Igarassu.app/alloy/styles/mapPlace.js
@@ -347,7 +361,7 @@ Command
 [INFO]   Removing files
 [DEBUG]  Removing empty directories
 [INFO]   Skipping xcodebuild
-[INFO]   Finished building the application in 2s 665ms
+[INFO]   Finished building the application in 2s 636ms
 [INFO]   Launching iOS Simulator
 [TRACE]  [ioslib] Selected iOS Simulator: iPhone 7 Plus
 [TRACE]  [ioslib]   UDID    = 5CB180AF-73EF-4B29-9995-A852108E3EF2

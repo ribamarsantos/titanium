@@ -2,16 +2,13 @@
   <NavigationWindow module ="ui">
   	<Window id="windowDetail">
 
-  			<TableView id="tableViewDetailPlace" dataCollection="places" onClick="showMoreDetailPlace" dataFilter="filterPlace">
+  			<TableView id="tableViewDetailPlace" dataCollection="places" onClick="showMoreDetailPlace" dataFilter="filterPlace" onLongclick="removeFavorite">
   				<TableViewRow id="viewRow" identificador="{id}">
   						<View id="viewDetailPlace">
   								<ImageView id="imgphotoPlace" image="{photo}" />
   							<View id="viewInfoDetailPlace">
   									<Label id="lblPlaceName" text="{place_name}" class="lblTitle"/>
   									<Label id="lblPlacePhone" text="{phone}" class="lblSubTitle" autoLink="Ti.UI.AUTOLINK_PHONE_NUMBERS"  />
-  							</View>
-  							<View id="viewDetailPlaceButtons">
-  								<ImageView id="imgbtnMap"/>
   							</View>
   						</View>
   				</TableViewRow>

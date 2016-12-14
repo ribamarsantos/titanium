@@ -34,6 +34,10 @@ function showFavoritePlace(e){
   Alloy.createController('favoritePlace').getView().open();
 }
 
+// info
+function showInfo() {
+  Alloy.createController('listinfoPlace').getView().open();
+}
 $.index.open();
 $.index.addEventListener('focus',callTemperature);
 

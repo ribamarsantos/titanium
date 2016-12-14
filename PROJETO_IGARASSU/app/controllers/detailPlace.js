@@ -15,7 +15,6 @@ $.windowDetail.title = row.title;
 $.windowDetail.addEventListener('open', callPlace);
 function callPlace(e) {
   if ( Ti.Network.online){
-    Ti.API.info('teste');
     xhr.open('GET', 'http://igarassu-project.herokuapp.com/place');
     xhr.send();
   }else{
@@ -32,4 +31,8 @@ function showMoreDetailPlace(e){
   Alloy.createController('descriptionPlace', objplace).
     getView().
     open();
+}
+
+function removeFavorite(e){
+  Ti.API.info('long click');
 }

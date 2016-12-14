@@ -4,9 +4,9 @@ var args = $.args;
 Alloy.Collections.places.fetch();
 
 function showdetailPlace(e){
-  var objplace = Alloy.Collections.places.get(e.rowData.identificador);
-  objplace.isFavorite = true;
-  Alloy.createController('descriptionPlace', objplace)
-  .getView().
-  open();
+  alert('open descriptionPlace');
+  // var objplace = Alloy.Collections.places.get(e.rowData.identificador);
+  // Alloy.createController('descriptionPlace', objplace)
+  // .getView().
+  // open();
 }

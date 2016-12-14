@@ -28,8 +28,8 @@ function Controller() {
     var $ = this;
     var exports = {};
     var __defers = {};
-    $.__views.__alloyId28 = Ti.UI.createWindow({
-        id: "__alloyId28"
+    $.__views.__alloyId30 = Ti.UI.createWindow({
+        id: "__alloyId30"
     });
     $.__views.tableViewListPlaces = Ti.UI.createTableView({
         backgroundColor: "#000C66",
@@ -38,10 +38,10 @@ function Controller() {
         },
         id: "tableViewListPlaces"
     });
-    $.__views.__alloyId28.add($.__views.tableViewListPlaces);
+    $.__views.__alloyId30.add($.__views.tableViewListPlaces);
     showDetails ? $.addListener($.__views.tableViewListPlaces, "click", showDetails) : __defers["$.__views.tableViewListPlaces!click!showDetails"] = true;
     $.__views.listPlaceWin = (require("ui").createNavigationWindow || Ti.UI.iOS.createNavigationWindow)({
-        window: $.__views.__alloyId28,
+        window: $.__views.__alloyId30,
         id: "listPlaceWin"
     });
     $.__views.listPlaceWin && $.addTopLevelView($.__views.listPlaceWin);

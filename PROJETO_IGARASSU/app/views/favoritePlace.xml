@@ -9,9 +9,6 @@
 										<Label id="lblPlaceName" text="{place_name}" class="lblTitle"/>
 										<Label id="lblPlacePhone" text="{phone}" class="lblSubTitle" autoLink="Ti.UI.AUTOLINK_PHONE_NUMBERS"  />
 								</View>
-								<View id="viewDetailPlaceButtons">
-									<ImageView id="imgbtnMap"/>
-								</View>
 							</View>
 					</TableViewRow>
 			</TableView>

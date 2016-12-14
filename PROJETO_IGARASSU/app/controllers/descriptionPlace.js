@@ -1,9 +1,8 @@
 // Arguments passed into this controller can be accessed via the `$.args` object directly or:
- // var favoritePlace = $.args;
- // Ti.API.info(favoritePlace.rowData.id2);
-var args = arguments[0]|| {};
 
-var arg = JSON.stringify(args[0]);
+var args = arguments[0]|| {};
+var arg = [];
+arg = JSON.stringify(args[0]);
 
 var objplace = JSON.parse(arg);
 
@@ -18,7 +17,7 @@ $.imgPlace.image     = objplace.photo;
 $.lblPhone.text      = objplace.phone;
 $.lblAddress.text    = objplace.address + " - " + objplace.district;
 $.lblPrice.text      = objplace.price;
-
+$.btnFavorite.visible = objplace.favorite != 1;
 var lang = Ti.Locale.currentLanguage;
 
 if ( lang.indexOf("pt-")){
@@ -52,11 +51,11 @@ function showMap(e){
 }
 
 function favoritePlace(e){
-  if ( !objplace.favorite){
-      objplace.favorite = true;
-      Ti.API.info(objplace.favorite);
+  if ( objplace.favorite != 1){
+      objplace.favorite = 1;
       Alloy.createModel('place', objplace).save();
       close();
+    }
     }else{
       alert('Já é um favorito');
     }
