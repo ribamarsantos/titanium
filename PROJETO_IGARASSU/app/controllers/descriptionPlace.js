@@ -55,7 +55,6 @@ function favoritePlace(e){
       objplace.favorite = 1;
       Alloy.createModel('place', objplace).save();
       close();
-    }
     }else{
       alert('Já é um favorito');
     }

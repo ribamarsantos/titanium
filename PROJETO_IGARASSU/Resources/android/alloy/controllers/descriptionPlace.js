@@ -19,15 +19,8 @@ function Controller() {
     function favoritePlace() {
         if (1 != objplace.favorite) {
             objplace.favorite = 1;
-            Ti.API.info(objplace.favorite);
-            var placeFav = JSON.stringify(Alloy.Collections.places.where({
-                id: objplace.id
-            }));
-            Ti.API.info(placeFav.place_name);
-            if (placeFav.id) alert("ja e um favorito"); else {
-                Alloy.createModel("place", objplace).save();
-                close();
-            }
+            Alloy.createModel("place", objplace).save();
+            close();
         } else alert("Já é um favorito");
     }
     function close() {
